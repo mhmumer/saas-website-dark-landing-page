@@ -4,7 +4,7 @@ import logoImage from '@/assets/images/logosaas.png'
 import MenuIcon from "@/assets/icons/menu.svg"
 import { FaArrowRight } from "react-icons/fa";
 import Link from 'next/link';
-import MobileNavbar from './Mobile-Navbar';
+
 import {
   Drawer,
   DrawerClose,
