@@ -46,7 +46,7 @@ function Navbar() {
                     <div className=" items-center justify-center">
                       <div className="">
                         <Link href="#" className="">
-                          <div className="left-[9.5rem] pb-8 pt-2  relative">
+                          <div className="left-[9rem] pb-8 pt-2  relative">
                             <div className="absolute w-12 h-12 top-2 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
                             <Image
                               src={logoImage}
