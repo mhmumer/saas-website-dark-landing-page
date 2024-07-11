@@ -22,7 +22,7 @@ const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 function Navbar() {
   return (
-    <div className="bg-gray-950">
+    <div className="bg-black bg-[#ffff  ]  ">
       <div className="px-4 ">
         <div className="py-4 flex items-center  justify-between">
           <div className="relative">
@@ -37,7 +37,7 @@ function Navbar() {
             <Drawer>
               <DrawerTrigger className="sm:hidden">
                 <div className=" border-gray-50 border-opacity-20 h-12 w-12 inline-flex justify-center items-center rounded-lg ">
-                  <MenuIcon className="text-white" />
+                  <MenuIcon className="text-white " />
                 </div>
               </DrawerTrigger>
               <DrawerContent className={`${BricolageGrotesque.className}`}>
@@ -48,7 +48,7 @@ function Navbar() {
                       <div className="pt-4 text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest  underline-offset-4 decoration-1 text-gray-300"
                         >
                           About
                         </Link>
@@ -56,7 +56,7 @@ function Navbar() {
                       <div className="pt-4 text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest  underline-offset-4 decoration-1 text-gray-300"
                         >
                           Education
                         </Link>
@@ -64,7 +64,7 @@ function Navbar() {
                       <div className="pt-4 text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest  underline-offset-4 decoration-1 text-gray-300"
                         >
                           Projects
                         </Link>
@@ -72,74 +72,75 @@ function Navbar() {
                       <div className="pt-4 text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest  underline-offset-4 decoration-1 text-gray-300"
                         >
-                          Services
+                          Skills
                         </Link>
                       </div>
                       <div className="pt-4 pb-6 text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest  underline-offset-4 decoration-1 text-gray-300"
                         >
-                          Help
+                          Services
                         </Link>
                       </div>
                       <div className="pt-4  items-center ">
                         <Link
                           href="mailto:rawalaumer@gmail.com"
-                          className="text-2xl relative left-[3.1rem] mx-auto font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-2xl relative left-[2.8rem] mx-auto font-bold tracking-wider underline-offset-4 decoration-1 text-gray-300"
                         >
-                          <div className="">
-                            <button className=" bg-gray-100 py-2  flex items-center text-gray-800 gap-3 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
+                          <div className="pb-10 pt-6">
+                            <button className="bg-gray-100 py-2  flex items-center text-gray-800 gap-3 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
                               Contact
-                              <FaArrowRight className="translate-x-1 p-[0.15rem] pt-[0.2rem] text-gray-800 transition opacity-100 " />
+                              <FaArrowRight className="translate-x-1 p-[0.15rem] pt-[0.2rem]text-gray-800 transition opacity-100 " />
                             </button>
                           </div>
                         </Link>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
               </DrawerContent>
             </Drawer>
           </div>
-          <nav className="hidden sm:flex gap-6 font-semibold items-center">
+          <nav
+            className={`${BricolageGrotesque.className} hidden sm:flex text-md tracking-widest gap-5 font-semibold items-center`}
+          >
             <a
               href="#"
-              className="text-white hover:text-opacity-100 trasition  text-opacity-[0.8]"
+              className="text-gray-50 hover:text-opacity-100 trasition  text-opacity-[0.7]"
             >
               About
             </a>
             <a
               href="#"
-              className="text-white hover:text-opacity-100 trasition  text-opacity-[0.8]"
+              className="text-gray-50 hover:text-opacity-100 trasition  text-opacity-[0.7]"
             >
               Services
             </a>
             <a
               href="#"
-              className="text-white hover:text-opacity-100 trasition  text-opacity-[0.8]"
+              className="text-gray-50 hover:text-opacity-100 trasition  text-opacity-[0.7]"
             >
               Education
             </a>
             <a
               href="#"
-              className="text-white hover:text-opacity-100 trasition  text-opacity-[0.8]"
+              className="text-gray-50 hover:text-opacity-100 trasition  text-opacity-[0.7]"
             >
               Help
             </a>
             <a
               href="#"
-              className="text-white hover:text-opacity-100 trasition  text-opacity-[0.8]"
+              className="text-gray-50 hover:text-opacity-100 trasition  text-opacity-[0.7]"
             >
               Projects
             </a>
-            <Link href="mailto:rawalaumer@gmail.com" className="pl-7">
-              <button className=" bg-gray-100 py-3 group flex items-center text-gray-800 gap-2 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-lg px-6">
+            <Link href="mailto:rawalaumer@gmail.com" className="ml-5">
+              <button className="bg-gray-100 opacity-100 py-3 text-lg font-black group flex items-center text-gray-900  gap-3 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3]  hover:duration-300 active:scale-103 transition rounded-xl px-8">
                 Contact
-                <FaArrowRight className="group-hover:translate-x-1 text-gray-800  font-black hidden group-hover:block  transition opacity-100 " />
+                <FaArrowRight className="group-hover:translate-x-1 text-gray-800  font-black hidden group-hover:block transition opacity-100 " />
               </button>
             </Link>
           </nav>

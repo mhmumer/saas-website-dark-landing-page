@@ -24,9 +24,7 @@ export default function RootLayout({
         <main className="">
           <Banner />
           <Navbar />
-          <div className="absolute z-20 hidden sm:block p-9 right-0 bottom-0">
-            <DarkModeToggle />
-          </div>
+          
           {children}
         </main>
       </body>

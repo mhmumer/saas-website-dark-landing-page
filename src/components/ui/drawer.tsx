@@ -65,11 +65,7 @@ const DrawerContent = React.forwardRef<
         </div>
       </Link>
       {children}
-      <div className="relative mx-auto bottom-3 pt-12 pb-4 pr-5">
-        <div className="">
-          <DarkModeToggle />
-        </div>
-      </div>
+      
     </DrawerPrimitive.Content>
   </DrawerPortal>
 ));
