@@ -1,10 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
-import logoImage from '@/assets/images/logosaas.png' 
-import MenuIcon from "@/assets/icons/menu.svg"
+import React from "react";
+import Image from "next/image";
+import logoImage from "@/assets/images/logosaas.png";
+import MenuIcon from "@/assets/icons/menu.svg";
 import { FaArrowRight } from "react-icons/fa";
-import Link from 'next/link';
-  
+import Link from "next/link";
+import { Bricolage_Grotesque } from "next/font/google";
+
 import {
   Drawer,
   DrawerClose,
@@ -15,10 +16,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import DarkModeToggle from './DarkModeToggle';
+import DarkModeToggle from "./DarkModeToggle";
 
-
-
+const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 function Navbar() {
   return (
@@ -40,7 +40,7 @@ function Navbar() {
                   <MenuIcon className="text-white" />
                 </div>
               </DrawerTrigger>
-              <DrawerContent className="">
+              <DrawerContent className={`${BricolageGrotesque.className}`}>
                 <div className="mx-auto w-full max-w-sm">
                   <div className="p-4 pb-6">
                     <div className=" items-center justify-center">
@@ -56,7 +56,7 @@ function Navbar() {
                           </div>
                         </Link>
                       </div>
-                      <div className="pt-3 text-center">
+                      <div className="pt-4 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
@@ -64,7 +64,7 @@ function Navbar() {
                           About
                         </Link>
                       </div>
-                      <div className="pt-3 text-center">
+                      <div className="pt-4 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
@@ -72,7 +72,7 @@ function Navbar() {
                           Education
                         </Link>
                       </div>
-                      <div className="pt-3 text-center">
+                      <div className="pt-4 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
@@ -80,7 +80,7 @@ function Navbar() {
                           Projects
                         </Link>
                       </div>
-                      <div className="pt-3 text-center">
+                      <div className="pt-4 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
@@ -88,7 +88,7 @@ function Navbar() {
                           Services
                         </Link>
                       </div>
-                      <div className="pt-3 pb-6 text-center">
+                      <div className="pt-4 pb-6 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
@@ -96,15 +96,15 @@ function Navbar() {
                           Help
                         </Link>
                       </div>
-                      <div className="pt-3 items-center ">
+                      <div className="pt-4 items-center ">
                         <Link
-                          href="#"
-                          className="text-xl relative left-[4rem]  font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          href="mailto:rawalaumer@gmail.com"
+                          className="text-2xl relative left-[3rem]  font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
                         >
                           <div className="">
-                            <button className=" bg-gray-100 py-2  flex items-center text-gray-800 gap-2 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
+                            <button className=" bg-gray-100 py-2  flex items-center text-gray-800 gap-3 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
                               Contact
-                              <FaArrowRight className="translate-x-1 pt-[0.2rem] text-gray-800 transition opacity-100 " />
+                              <FaArrowRight className="translate-x-1 p-[0.15rem] pt-[0.2rem] text-gray-800 transition opacity-100 " />
                             </button>
                           </div>
                         </Link>
@@ -164,4 +164,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;
