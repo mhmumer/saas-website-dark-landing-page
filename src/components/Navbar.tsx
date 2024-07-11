@@ -44,18 +44,7 @@ function Navbar() {
                 <div className="mx-auto w-full max-w-sm">
                   <div className="p-4 pb-6">
                     <div className=" items-center justify-center">
-                      <div className="">
-                        <Link href="#" className="">
-                          <div className="left-[9.5rem] pb-8 pt-2  relative">
-                            <div className="absolute w-12 h-12 top-2 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
-                            <Image
-                              src={logoImage}
-                              className="h-12 w-12 relative"
-                              alt="Logo Image"
-                            />
-                          </div>
-                        </Link>
-                      </div>
+                      <div className=""></div>
                       <div className="pt-4 text-center">
                         <Link
                           href="#"
@@ -96,10 +85,10 @@ function Navbar() {
                           Help
                         </Link>
                       </div>
-                      <div className="pt-4 items-center ">
+                      <div className="pt-4  items-center ">
                         <Link
                           href="mailto:rawalaumer@gmail.com"
-                          className="text-2xl relative left-[3rem]  font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
+                          className="text-2xl relative left-[3.1rem] mx-auto font-bold tracking-wider  underline-offset-4 decoration-1 text-gray-300"
                         >
                           <div className="">
                             <button className=" bg-gray-100 py-2  flex items-center text-gray-800 gap-3 focus:scale-103  hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
@@ -109,11 +98,7 @@ function Navbar() {
                           </div>
                         </Link>
                       </div>
-                      <div className="relative left-[8.7rem] pt-16">
-                        <div className="">
-                          <DarkModeToggle />
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
