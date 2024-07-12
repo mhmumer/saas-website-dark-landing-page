@@ -28,11 +28,11 @@ export const Features = () => {
   return (
     <div className="bg-gray-950 text-white py-[72px] sm:py-24">
       <div className="container">
-        <h2 className="text-center font-bold sm:text-6xl text-5xl tracking-tight">
+        <h2 className="text-center font-bold sm:text-6xl text-5xl tracking-tighter">
           Experience a web revolution
         </h2>
         <div className="max-w-4xl mx-auto">
-        <p className="text-center mt-5 text-xl px-12 text-white/70">
+        <p className="text-center mt-5 text-xl  text-white/70">
           Enjoy top-tier security with advanced encryption, embrace seamless,
           responsive designs for every device, and boost your online presence
           with expert SEO optimization for maximum visibility and success.
