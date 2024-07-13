@@ -56,9 +56,10 @@ export const Hero = () => {
             drive your success.
           </p>
         </div>
-        <div className="flex justify-center mt-8">
-          <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">
-            Get Started
+        <div className="flex justify-center mt-8 opacity-95 relative">
+          <button className="relative group bg-white text-black py-3 px-5 sm:py-4 sm:px-10 rounded-lg font-medium overflow-hidden">
+            <div className="bg-gray-300 opacity-10  h-24 w-24 rounded-full absolute inset-0 -left-7 -top-5 group-hover:translate-x-6" />
+            <span className="relative z-10">Get Started</span>
           </button>
         </div>
       </div>

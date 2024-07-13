@@ -20,7 +20,7 @@ export const LogoTicker = () => {
   return (
     <div className="bg-black text-white py-[72px]">
       <div className="container">
-        <h2 className="text-xl text-center text-white/70">
+        <h2 className="text-xl text-center text-white/80">
           Trusted by the worlds most innovative teams
         </h2>
         <div className="overflow-hidden mt-12 before:content-[''] after:content-[''] before:absolute before:h-full before:w-5 before:opacity-70 after:absolute after:h-full after:w-20 relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
