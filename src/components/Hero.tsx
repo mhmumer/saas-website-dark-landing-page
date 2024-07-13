@@ -2,10 +2,15 @@ import Arrow from "@/assets/icons/arrow-w.svg"
 import CursorImage from "@/assets/images/cursor.png"
 import MessageImage from "@/assets/images/message.png"
 import Image from "next/image";
+import { Bricolage_Grotesque } from "next/font/google";
+
+const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const Hero = () => {
   return (
-    <main className="bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip">
+    <main
+      className={`${BricolageGrotesque.className} bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`}
+    >
       <div className="absolute h-[375px] sm:h-[768px] md:h-[1200px] lg:h-[1400px] w-[750px] sm:w-[1536px] md:w-[1736px] lg:w-[2400px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
       <div className="container relative">
         <div className="flex items-center justify-center">
@@ -30,17 +35,17 @@ export const Hero = () => {
             </h1>
             <Image
               src={CursorImage}
-              height="200"
-              width="200"
+              height="150"
+              width="170"
               alt={"Cursor Image"}
-              className="absolute right-[476px] top-[108px] hidden sm:inline"
+              className="absolute right-[450px] top-[50px] rotate-[15deg] hidden sm:inline"
             />
             <Image
               src={MessageImage}
               alt={"Message Image"}
               height="200"
               width="200"
-              className="absolute top-[56px] left-[498px] hidden sm:inline"
+              className="absolute top-[50px] left-[500px] hidden sm:inline"
             />
           </div>
         </div>
