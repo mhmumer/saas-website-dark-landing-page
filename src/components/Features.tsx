@@ -26,7 +26,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="bg-black/90 text-white py-[72px] sm:py-24">
+    <div className="bg-black/99 text-white py-[72px] sm:py-24">
       <div className="container">
         <h2 className="text-center font-bold sm:text-6xl text-5xl tracking-tighter">
           Experience a web revolution
