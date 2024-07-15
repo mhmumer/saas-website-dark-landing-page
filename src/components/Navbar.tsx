@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logoImage from "@/assets/images/logosaas.png";
+import logo from "@/assets/images/logo.png";
 import MenuIcon from "@/assets/icons/menu.svg";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
@@ -26,10 +26,10 @@ function Navbar() {
       <div className="px-4 py-2">
         <div className="py-4 flex items-center  justify-between">
           <div className="relative">
-            <div className="absolute w-full top-2 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
+            <div className="absolute w-full top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
             <Image
-              src={logoImage}
-              className="h-12 w-12 relative"
+              src={logo}
+              className="h-10 rounded-lg w-10 relative"
               alt="Logo Image"
             />
           </div>
