@@ -1,5 +1,5 @@
 "use client";
-
+import Name from "@/assets/images/MHMTechX.gif" 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/assets/images/favicon.ico";
@@ -51,10 +51,11 @@ function Navbar() {
             <div className="absolute w-full top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
             <Image
               src={logo}
-              className="h-10 rounded-lg w-10 relative"
+              className="h-11  bg-gray-950 rounded-xl w-11 relative"
               alt="Logo Image"
             />
           </div>
+          <Image src={Name} alt="" className="-mt-7 h-16 w-24"/>
           <div className="flex gap-4 absolute right-2">
             <Drawer>
               <DrawerTrigger className="sm:hidden">
@@ -170,7 +171,6 @@ function Navbar() {
               </a>
             </nav>
           </div>
-       
         </div>
       </div>
     </div>
