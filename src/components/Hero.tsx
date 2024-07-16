@@ -19,7 +19,7 @@ export const Hero = () => {
             className="inline-flex gap-3 border py-1 px-2 rounded-lg border-gray-50/30"
           >
             <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
-              MHMTech is here
+              MHMTechX is here
             </span>
             <span className="inline-flex items-center gap-1">
               <span>Read More</span>
@@ -30,7 +30,7 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1 className="text-7xl sm:text-9xl font-bold tracking-tighter text-center  inline-flex">
-              One Task <br />
+              One Pixel <br />
               at a Time
             </h1>
             <Image

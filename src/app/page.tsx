@@ -9,8 +9,9 @@ import { FAQs } from "@/components/FAQs";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 
+
 export const metadata: Metadata = {
-  title: "MHMTechx",
+  title: "MHMTechX",
   description: "Elevating Digital Realms with Bespoke Brilliance.",
 };
 

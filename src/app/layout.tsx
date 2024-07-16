@@ -6,6 +6,8 @@ import DarkModeToggle from "@/components/DarkModeToggle";
 import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 
+
+
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 
@@ -19,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`{clsx(dmSans.className, "antialiased")} `}>
         <main className="">
+          
           <Banner />
+          
           <Navbar />
           
           {children}
