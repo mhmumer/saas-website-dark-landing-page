@@ -44,7 +44,7 @@ function Navbar() {
   }, [lastScrollY]);
 
   return (
-    <div className="bg-black z-[999] relative">
+    <div className="bg-black relative">
       <div className="px-4 py-2">
         <div className="py-4 flex items-center justify-between">
           <div className="relative">
@@ -55,7 +55,7 @@ function Navbar() {
               alt="Logo Image"
             />
           </div>
-          <Image src={Name} alt="" className="-mt-7 h-16 w-24"/>
+          <Image src={Name} alt="" className="-mt-7 h-16 w-20 sm:inline hidden"/>
           <div className="flex gap-4 absolute right-2">
             <Drawer>
               <DrawerTrigger className="sm:hidden">
