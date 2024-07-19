@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/MHMTechX.gif"; 
 import Link from "next/link";
 
 import { cn } from "@/lib/utils"
@@ -47,7 +47,7 @@ const DrawerContent = React.forwardRef<
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed inset-x-0 bottom-0 sm:hidden opacity-[0.92] z-50 mt-24 flex h-auto flex-col rounded-t-[10px]  bg-gray-950",
+        "fixed inset-x-0 bottom-0 sm:hidden opacity-[0.9] z-50 mt-24 flex h-auto flex-col rounded-t-[10px]  bg-gray-950",
         className
       )}
       {...props}
@@ -56,10 +56,10 @@ const DrawerContent = React.forwardRef<
 
       <Link href="#" className="mx-auto pt-6">
         <div className=" pb-8   relative">
-          <div className="absolute w-11 h-11 top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
+         
           <Image
             src={logo}
-            className="h-11 rounded-lg w-11 relative"
+            className="h-16 w-20 relative"
             alt="Logo Image"
           />
         </div>

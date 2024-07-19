@@ -35,17 +35,17 @@ export const Hero = () => {
             </h1>
             <Image
               src={CursorImage}
-              height="150"
+              height="170"
               width="170"
               alt={"Cursor Image"}
-              className="absolute right-[450px] top-[50px] rotate-[15deg] hidden sm:inline"
+              className="absolute right-[480px] top-[130px]  hidden sm:inline"
             />
             <Image
               src={MessageImage}
               alt={"Message Image"}
               height="200"
               width="200"
-              className="absolute top-[50px] left-[500px] hidden sm:inline"
+              className="absolute top-[50px] left-[490px] hidden sm:inline"
             />
           </div>
         </div>
