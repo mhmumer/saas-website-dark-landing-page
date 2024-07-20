@@ -25,7 +25,7 @@ export default function Home() {
       <Features />
       
       <FAQs />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <Footer />
     </>
   );

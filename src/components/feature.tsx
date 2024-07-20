@@ -38,7 +38,7 @@ export const Feature = ({
       className="border border-white/40 px-5 py-10 text-center rounded-xl relative"
     >
       <motion.div
-        className="absolute inset-0 border-[2px] border-purple-400 rounded-xl"
+        className="absolute inset-0 border-[2px] border-purple-300 rounded-xl"
         style={{
           WebkitMaskImage: maskImage,
           maskImage,

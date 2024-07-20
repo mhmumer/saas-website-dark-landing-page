@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`{clsx(dmSans.className, "antialiased")} `}>
         <main className="">
           
-          <Banner />
+          {/* <Banner /> */}
           
           <Navbar />
           

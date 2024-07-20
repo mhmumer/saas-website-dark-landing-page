@@ -51,14 +51,14 @@ function Navbar() {
             <div className="absolute w-full top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
             <Image
               src={logo}
-              className="h-11  bg-gray-950 rounded-xl w-11 relative"
+              className="h-11 -mt-4 bg-gray-950 rounded-xl w-11 relative"
               alt="Logo Image"
             />
           </div>
           <Image
             src={Name}
             alt=""
-            className="-mt-7 h-16 w-20 sm:inline hidden"
+            className="-mt-4 h-20 w-20 sm:inline hidden"
           />
           <div className="flex gap-4 absolute right-2 sm:hidden">
             <Drawer>
@@ -134,8 +134,8 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`hidden sm:inline fixed top-[70px] left-0 w-full z-50 transition-transform  duration-300 ${
-          isNavbarVisible ? "transform-none top-[70px]" : "-translate-y-[300%]"
+        className={`hidden sm:inline pr-6 fixed top-[25px] left-0 w-full z-50 transition-transform  duration-300 ${
+          isNavbarVisible ? "transform-none" : "-translate-y-[300%]"
         }`}
       >
         <div className="flex justify-center">
