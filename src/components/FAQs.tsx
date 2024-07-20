@@ -3,6 +3,11 @@ import React from "react";
 import Plus from "../assets/icons/plus.svg";
 import Minus from "@/assets/icons/minus.svg"
 import clsx from "clsx";
+import { motion, AnimatePresence } from "framer-motion"; 
+import { Bricolage_Grotesque, Carme } from "next/font/google";
+
+const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
+const carme = Carme({ subsets: ["latin"], weight: "400" });
 
 const faqs = [
  
@@ -63,17 +68,42 @@ const Accordion = ({
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center ">
-        <span className="flex-1 text-lg font-bold">{question}</span>
-        {isOpen?<Minus /> : <Plus/>}
+        <span
+          className={`${BricolageGrotesque.className} flex-1 sm:text-xl text-lg pr-5 font-bold`}
+        >
+          {question}
+        </span>
+        {isOpen ? <Minus /> : <Plus />}
       </div>
-      <div
-        className={clsx('mt-4 px-2',{
-          hidden: !isOpen,
-          "": isOpen === true,
-        })}
-      >
-        {answer}
-      </div>
+      <AnimatePresence>
+        {isOpen && (
+          <div className={`${carme.className}`}>
+            <motion.div
+              className={clsx("mt-4 px-2 text-base sm:text-lg font-medium", {
+                hidden: !isOpen,
+                "": isOpen === true,
+              })}
+              initial={{
+                opacity: 0,
+                height: 0,
+                marginTop: 0,
+              }}
+              animate={{
+                opacity: 1,
+                height: "auto",
+                marginTop: "16px",
+              }}
+              exit={{
+                opacity: 0,
+                height: 0,
+                marginTop: 0,
+              }}
+            >
+              {answer}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
@@ -82,10 +112,12 @@ export const FAQs = () => {
   return (
     <main className="bg-black text-white bg-gradient-to-b from-[#5D2CA8]/90 to-black py-[72px] sm:py-24">
       <div className="container">
-        <h2 className="text-center text-5xl lg:text-6xl max-w-[748px] mx-auto font-bold tracking-tight">
+        <h2
+          className={`text-center text-5xl lg:text-6xl max-w-[788px] mx-auto font-bold tracking-tight ${BricolageGrotesque.className}`}
+        >
           Frequently Asked Questions
         </h2>
-        <div className="mt-12 max-w-[648px] lg:mx-auto lg:max-w-[790px]">
+        <div className="mt-12 max-w-[648px] mx-auto lg:max-w-[800px]">
           {faqs.map(({ question, answer }) => (
             <Accordion question={question} answer={answer} key={question} />
           ))}

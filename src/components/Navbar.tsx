@@ -55,10 +55,14 @@ function Navbar() {
               alt="Logo Image"
             />
           </div>
-          <Image src={Name} alt="" className="-mt-7 h-16 w-20 sm:inline hidden"/>
-          <div className="flex gap-4 absolute right-2">
+          <Image
+            src={Name}
+            alt=""
+            className="-mt-7 h-16 w-20 sm:inline hidden"
+          />
+          <div className="flex gap-4 absolute right-2 sm:hidden">
             <Drawer>
-              <DrawerTrigger className="sm:hidden">
+              <DrawerTrigger className="">
                 <div className="border-gray-50 border-opacity-20 h-12 w-12 inline-flex justify-center items-center rounded-lg">
                   <MenuIcon className="text-white" />
                 </div>
@@ -130,14 +134,14 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`fixed top-[70px] left-0 w-full z-50 transition-transform duration-300 ${
-          isNavbarVisible ? "transform-none" : "-translate-y-[300%]"
+        className={`hidden sm:inline fixed top-[70px] left-0 w-full z-50 transition-transform  duration-300 ${
+          isNavbarVisible ? "transform-none top-[70px]" : "-translate-y-[300%]"
         }`}
       >
         <div className="flex justify-center">
           <div className="border relative opacity-90 border-opacity-20 mx-auto -top-1   border-gray-100 rounded-full bg-white bg-opacity-[0.9]">
             <nav
-              className={`${BricolageGrotesque.className} hidden sm:flex text-base  text-gray-900 lg:text-[1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-5 font-base items-center`}
+              className={`${BricolageGrotesque.className} flex text-base  text-gray-900 lg:text-[1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-5 font-base items-center`}
             >
               <a
                 href="#"

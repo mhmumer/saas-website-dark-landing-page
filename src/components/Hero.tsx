@@ -1,15 +1,18 @@
+"use client"
 import Arrow from "@/assets/icons/arrow-w.svg"
 import CursorImage from "@/assets/images/cursor.png"
 import MessageImage from "@/assets/images/message.png"
 import Image from "next/image";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Carme } from "next/font/google";
+import {motion} from 'framer-motion' 
 
 const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
+const carme = Carme({ subsets: ["latin"], weight: "400" });
 
 export const Hero = () => {
   return (
     <main
-      className={`${BricolageGrotesque.className} bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`}
+      className={` bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`}
     >
       <div className="absolute h-[375px] sm:h-[768px] md:h-[1200px] lg:h-[1400px] w-[750px] sm:w-[1536px] md:w-[1736px] lg:w-[2400px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
       <div className="container relative">
@@ -29,28 +32,19 @@ export const Hero = () => {
         </div>
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
-            <h1 className="text-7xl sm:text-9xl font-bold tracking-tighter text-center  inline-flex">
+            <h1
+              className={`${BricolageGrotesque.className} text-7xl sm:text-[9rem] font-black tracking-tighter text-center  inline-flex`}
+            >
               One Pixel <br />
               at a Time
             </h1>
-            <Image
-              src={CursorImage}
-              height="170"
-              width="170"
-              alt={"Cursor Image"}
-              className="absolute right-[480px] top-[130px]  hidden sm:inline"
-            />
-            <Image
-              src={MessageImage}
-              alt={"Message Image"}
-              height="200"
-              width="200"
-              className="absolute top-[50px] left-[490px] hidden sm:inline"
-            />
+            
           </div>
         </div>
         <div className="flex justify-center">
-          <p className="text-center text-xl mt-8  max-w-md">
+          <p
+            className={`${carme.className} text-center text-lg mt-4  max-w-lg`}
+          >
             Experience the thrill of achievement with a custom app tailored to
             your unique needs, featuring stunning designs that captivate and
             drive your success.
