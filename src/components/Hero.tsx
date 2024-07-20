@@ -33,7 +33,7 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1
-              className={`${BricolageGrotesque.className} text-7xl sm:text-[9rem] font-black tracking-tighter text-center  inline-flex`}
+              className={`${BricolageGrotesque.className} text-6xl sm:text-[9rem] font-black tracking-tighter text-center  inline-flex`}
             >
               One Pixel <br />
               at a Time

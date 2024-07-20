@@ -38,14 +38,14 @@ export const Features = () => {
     <div className="bg-[rgb(0,0,0,0.99)] relative text-white py-[72px] sm:py-24">
       <div className="container">
         <h2
-          className={`text-center font-bold xl:text-6xl sm:text-5xl tracking-tighter ${BricolageGrotesque.className} `}
+          className={`text-center font-bold xl:text-6xl text-4xl tracking-tighter ${BricolageGrotesque.className} `}
         >
           Experience a web revolution
         </h2>
         
         <div className="max-w-4xl mx-auto">
           <p
-            className={`${carme.className} text-center mt-5 text-xl lg:max-w-3xl xl:max-w-3xl mx-auto  text-white/70`}
+            className={`${carme.className} text-center mt-5 text-lg lg:max-w-3xl xl:max-w-3xl mx-auto  text-white/70`}
           >
             Enjoy top-tier security with advanced encryption, embrace seamless,
             responsive designs for every device, and boost your online presence
