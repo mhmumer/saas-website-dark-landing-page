@@ -51,7 +51,7 @@ function Navbar() {
             <div className="absolute w-full top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
             <Image
               src={logo}
-              className="h-11 -mt-4 bg-gray-950 rounded-xl w-11 relative"
+              className="h-11 sm:-mt-4 bg-gray-950 rounded-xl w-11 relative"
               alt="Logo Image"
             />
           </div>

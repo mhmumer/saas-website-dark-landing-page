@@ -10,9 +10,8 @@ const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 const carme = Carme({ subsets: ["latin"], weight: "400" });
 
 const faqs = [
- 
   {
-    question: "How can I get started with mhmTechX?",
+    question: "How can I get started with Mutex?",
     answer:
       "Getting started is easy! Contact us through our website or social media channels, and one of our team members will reach out to discuss your project needs and goals. We’ll guide you through our process and get your project underway.",
   },
@@ -32,9 +31,9 @@ const faqs = [
       "Yes, we offer ongoing support and maintenance packages to ensure your website remains up-to-date, secure, and running smoothly. We’re here to help with any updates or issues that may arise post-launch.",
   },
   {
-    question: "What sets mhmTechX apart from other digital agencies?",
+    question: "What sets Mutex apart from other digital agencies?",
     answer:
-      "At mhmTechX, we pride ourselves on our commitment to innovation, quality, and client satisfaction. Our bespoke approach ensures that each project is tailored to meet the specific needs and goals of our clients, delivering exceptional results every time.",
+      "At Mutex, we pride ourselves on our commitment to innovation, quality, and client satisfaction. Our bespoke approach ensures that each project is tailored to meet the specific needs and goals of our clients, delivering exceptional results every time.",
   },
   {
     question: "Can you help with digital marketing and SEO?",
@@ -51,7 +50,6 @@ const faqs = [
     answer:
       "Yes, we work with clients from around the world. Our team is experienced in managing projects remotely and can effectively communicate and collaborate with international clients to ensure successful project delivery.",
   },
-  
 ];
 
 const Accordion = ({
