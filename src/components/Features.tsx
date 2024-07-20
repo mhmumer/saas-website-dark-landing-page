@@ -37,23 +37,7 @@ export const Features = () => {
   return (
     <div className="relative bg-black text-white py-[72px] sm:py-24">
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <svg className="w-full h-full">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop
-                offset="0%"
-                style={{ stopColor: "rgb(0,0,0,0.3)", stopOpacity: 1 }}
-              />
-              <stop
-                offset="100%"
-                style={{ stopColor: "rgb(0,0,0,0.3)", stopOpacity: 1 }}
-              />
-            </linearGradient>
-          </defs>
-          <circle cx="50%" cy="50%" r="60%" fill="url(#grad1)" />
-          <circle cx="20%" cy="80%" r="30%" fill="rgba(255,255,255,0.03)" />
-          <circle cx="85%" cy="30%" r="25%" fill="rgba(255,255,255,0.02)" />
-        </svg>
+        <div className="h-[1200px] w-[1400px] bg-[rgb(255,255,255,0.03)] blur-lg mx-auto rounded-full"></div>
       </div>
       <div className="container mx-auto relative z-10">
         <h2
