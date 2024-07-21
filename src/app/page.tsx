@@ -11,7 +11,7 @@ import { Footer } from "@/components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "Mutex",
+  title: "Mutecx",
   description: "Elevating Digital Realms with Bespoke Brilliance.",
 };
 

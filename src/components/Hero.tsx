@@ -22,7 +22,7 @@ export const Hero = () => {
             className="inline-flex gap-3 border py-1 px-2 rounded-lg border-gray-50/30"
           >
             <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
-              Mutex is here
+              Mutecx is here
             </span>
             <span className="inline-flex items-center gap-1">
               <span>Read More</span>
@@ -38,7 +38,6 @@ export const Hero = () => {
               One Pixel <br />
               at a Time
             </h1>
-            
           </div>
         </div>
         <div className="flex justify-center">
