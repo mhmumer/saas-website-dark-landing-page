@@ -77,7 +77,7 @@ const Accordion = ({
         {isOpen && (
           <div className={`${carme.className}`}>
             <motion.div
-              className={clsx("mt-4 px-2 text-base sm:text-lg font-medium", {
+              className={clsx("mt-4 px-2 text-base sm:text-base font-medium", {
                 hidden: !isOpen,
                 "": isOpen === true,
               })}

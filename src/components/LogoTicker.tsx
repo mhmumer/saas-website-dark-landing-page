@@ -23,7 +23,7 @@ const images = [
 
 export const LogoTicker = () => {
   return (
-    <div className="bg-black text-white py-[1px]">
+    <div className="bg-black text-white py-[1px] pb-12">
       <div className="">
         
         <div className="overflow-hidden mt-12 before:content-[''] after:content-[''] before:z-10 before:absolute before:h-full before:w-6  before:opacity-70 after:absolute after:h-full after:w-20 relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
