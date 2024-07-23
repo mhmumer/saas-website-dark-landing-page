@@ -8,6 +8,7 @@ import { ProductShowcase } from "@/components/ProductShowcase";
 import { FAQs } from "@/components/FAQs";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
+import Present from "@/components/projectvid";
 
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <Features />
-      
+      <Present/>
       <FAQs />
       {/* <CallToAction /> */}
       <Footer />
