@@ -37,23 +37,23 @@ const ClipPathLinks = () => {
        </h1>
        <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
          <div className="grid grid-cols-2 divide-x divide-neutral-500">
-           <LinkBox Icon={SiShopify} href="#" />
-           <LinkBox Icon={SiAdobe} href="#" />
+           <LinkBox Icon={SiShopify} />
+           <LinkBox Icon={SiAdobe} />
          </div>
          <div className="grid grid-cols-3 divide-x divide-neutral-500">
-           <LinkBox Icon={SiPython} href="#" />
-           <LinkBox Icon={SiDjango} href="#" />
-           <LinkBox Icon={SiFastapi} href="#" />
+           <LinkBox Icon={SiPython} />
+           <LinkBox Icon={SiDjango} />
+           <LinkBox Icon={SiFastapi}  />
          </div>
          <div className="grid grid-cols-4 divide-x divide-neutral-500">
-           <LinkBox Icon={SiNextdotjs} href="#" />
-           <LinkBox Icon={SiTypescript} href="#" />
-           <LinkBox Icon={SiReact} href="#" />
-           <LinkBox Icon={SiFigma} href="#" />
+           <LinkBox Icon={SiNextdotjs} />
+           <LinkBox Icon={SiTypescript} />
+           <LinkBox Icon={SiReact} />
+           <LinkBox Icon={SiFigma} />
          </div>
          <div className="grid grid-cols-2 divide-x divide-neutral-500">
-           <LinkBox Icon={SiFlutter} href="#" />
-           <LinkBox Icon={TbBrandReactNative} href="#" />
+           <LinkBox Icon={SiFlutter}  />
+           <LinkBox Icon={TbBrandReactNative} />
          </div>
        </div>
      </main>
@@ -80,10 +80,10 @@ const EXIT_KEYFRAMES = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon, href }) => {
+const LinkBox = ({ Icon }:{Icon:any}) => {
   const [scope, animate] = useAnimate();
 
-  const getNearestSide = (e) => {
+  const getNearestSide = (e:any) => {
     const box = e.target.getBoundingClientRect();
 
     const proximityToLeft = {
