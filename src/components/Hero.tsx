@@ -33,10 +33,11 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1
-              className={`${BricolageGrotesque.className} text-4xl sm:text-7xl font-black tracking-tighter text-center  inline-flex`}
+              className={`${BricolageGrotesque.className} text-4xl sm:text-7xl leading-10 font-black tracking-tighter text-center  inline-flex`}
             >
-              Building dreams, <br />
-              Innovating futures daily
+              Digitally projecting
+              <br />
+              heartfelt dreams
             </h1>
           </div>
         </div>
@@ -51,7 +52,6 @@ export const Hero = () => {
         </div>
         <div className="flex justify-center mt-9   opacity-95 relative">
           <button className="rounded-md  bg-white px-6 py-3 border-dashed border-gray-300 border font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[5px_5px_0px_black] active:translate-x-[0px] active:translate-y-[0px]  active:shadow-none">
-            
             <span className="relative z-10">Get Started</span>
           </button>
         </div>
