@@ -47,14 +47,17 @@ function Navbar() {
     <div className="bg-black relative">
       <div className="px-4 py-2">
         <div className="py-4 flex items-center justify-between">
-          <div className="relative">
-            <div className="absolute w-full top-1 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
-            <Image
-              src={logo}
-              className="h-11 sm:-mt-4 bg-gray-950 rounded-xl w-11 relative"
-              alt="Logo Image"
-            />
-          </div>
+          <a href="#">
+            <div className="relative">
+              <div className="absolute w-full top-0 bottom-0 bg-[linear-gradient(to_right,rgb(252,214,255,.7),rgb(41,216,255,.7),rgb(255,253,128,.7),rgb(248,154,191,.7),rgb(252,214,255,.7))] blur-md"></div>
+
+              <Image
+                src={logo}
+                className="h-11 sm:-mt-4 bg-gray-950 rounded-xl w-11 relative"
+                alt="Logo Image"
+              />
+            </div>
+          </a>
           <Image
             src={Name}
             alt=""
