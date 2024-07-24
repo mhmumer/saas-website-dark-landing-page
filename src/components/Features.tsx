@@ -36,9 +36,7 @@ const features = [
 export const Features = () => {
   return (
     <div className="relative bg-black text-white py-[72px] sm:py-24">
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="h-[1200px] w-[1400px] bg-[rgb(255,255,255,0.03)] blur-lg mx-auto rounded-full"></div>
-      </div>
+      <div className="absolute inset-0 z-0 overflow-hidden"></div>
       <div className="container mx-auto relative z-10">
         <h2
           className={`text-center z-10 font-bold xl:text-6xl text-4xl tracking-tighter ${BricolageGrotesque.className}`}
@@ -55,7 +53,7 @@ export const Features = () => {
             with expert SEO optimization for maximum visibility and success.
           </p>
         </div>
-        <div className="mt-16 flex flex-col sm:flex-row gap-4 sm:flex-1">
+        <div className="mt-16 flex flex-wrap gap-6 sm:flex-1 relative items-center justify-center">
           {features.map(({ title, description, img }) => (
             <Feature
               key={title}
