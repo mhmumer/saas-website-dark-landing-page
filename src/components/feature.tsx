@@ -48,10 +48,10 @@ export const Feature = ({
         duration: 1,
         ease: "backInOut",
       }}
-      className="h-[21rem] w-[21rem] border border-white/40  bg-black overflow-hidden shrink-0 rounded-md text-center relative flex flex-col justify-between"
+      className="h-[21rem] w-[21rem] border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
     >
-      <Background/  >
-      <div className="z-20 relative flex flex-col justify-between h-full">
+       
+      <div className="z-20 relative  justify-between h-full">
         <motion.h3
           initial={{ scale: 0.95 }}
           variants={{
@@ -68,18 +68,11 @@ export const Feature = ({
           {title}
         </motion.h3>
         <p
-          className={`${carme.className} z-20 block -mt-6 text-white/60 px-5 font-normal`}
+          className={`${carme.className} z-20 block mt-8 text-white/60 px-5 font-normal`}
         >
           {description}
         </p>
-        <div className="z-20 mb-6 relative">
-          <Link
-            href={"#"}
-            className="left-4 p-4 right-4 rounded border-2 bg-white py-3 px-[5.9rem] text-center font-mono font-black uppercase text-neutral-800 backdrop-blur items-center justify-center bottom-5 transition-colors hover:bg-white/30 hover:text-white "
-          >
-            Learn More!
-          </Link>
-        </div>
+      
       </div>
     </motion.div>
   );
