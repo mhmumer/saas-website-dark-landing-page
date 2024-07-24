@@ -45,13 +45,18 @@ export const Feature = ({
         },
       }}
       transition={{
-        duration: 1,
+        duration: 0.7,
         ease: "backInOut",
       }}
-      className="h-[21rem] w-[21rem] border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
+      className="h-[22rem] sm:w-[25rem] w-[22rem]  border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
     >
-       
       <div className="z-20 relative  justify-between h-full">
+        <Image
+          src={img}
+          alt=""
+          className="border border-gray-500 h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-8 -ml-6 p-2 rounded-2xl"
+        />
+
         <motion.h3
           initial={{ scale: 0.95 }}
           variants={{
@@ -60,78 +65,20 @@ export const Feature = ({
             },
           }}
           transition={{
-            duration: 1,
+            duration: 0.7,
             ease: "backInOut",
           }}
-          className={`${BricolageGrotesque.className} origin-center text-white/90 pt-7 text-5xl font-black leading-[1.2] block font-mono`}
+          className={`${BricolageGrotesque.className} origin-center text-white/90 pt-10 text-5xl font-black leading-[1.2] block font-mono`}
         >
           {title}
         </motion.h3>
         <p
-          className={`${carme.className} z-20 block mt-8 text-white/60 px-5 font-normal`}
+          className={`${carme.className} z-20 block mt-4 text-white/60 px-5 font-normal`}
         >
           {description}
         </p>
-      
       </div>
     </motion.div>
   );
 };
 
-const Background = () => {
-  return (
-    <motion.svg
-      width="320"
-      height="384"
-      viewBox="0 0 320 384"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute z-10 hidden lg:block"
-      variants={{
-        hover: {
-          scale: 1.5,
-        },
-      }}
-      transition={{
-        duration: 1,
-        ease: "backInOut",
-      }}
-    >
-      <motion.circle
-        variants={{
-          hover: {
-            scaleY: 0.5,
-            y: -25,
-          },
-        }}
-        transition={{
-          duration: 1,
-          ease: "backInOut",
-          delay: 0.2,
-        }}
-        cx="160.5"
-        cy="114.5"
-        r="101.5"
-        fill="#9560EB"
-      />
-      <motion.ellipse
-        variants={{
-          hover: {
-            scaleY: 2.25,
-            y: -25,
-          },
-        }}
-        transition={{
-          duration: 1,
-          ease: "backInOut",
-          delay: 0.2,
-        }}
-        cx="160.5"
-        cy="265.5"
-        rx="101.5"
-        ry="43.5"
-        fill="#5D2CA8"
-      />
-    </motion.svg>
-  );
-};
