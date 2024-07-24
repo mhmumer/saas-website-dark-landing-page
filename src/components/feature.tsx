@@ -48,13 +48,13 @@ export const Feature = ({
         duration: 0.7,
         ease: "backInOut",
       }}
-      className="h-[22rem] sm:w-[25rem] w-[22rem]  border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
+      className="h-[20rem] sm:w-[23rem] w-[22rem]  border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
     >
       <div className="z-20 relative  justify-between h-full">
         <Image
           src={img}
           alt=""
-          className="border border-gray-500 h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-8 -ml-6 p-2 rounded-2xl"
+          className="border border-gray-500 h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-12 -ml-6 p-2 rounded-2xl"
         />
 
         <motion.h3
@@ -68,14 +68,14 @@ export const Feature = ({
             duration: 0.7,
             ease: "backInOut",
           }}
-          className={`${BricolageGrotesque.className} origin-center text-white/90 pt-10 text-5xl font-black leading-[1.2] block font-mono`}
+          className={`${BricolageGrotesque.className} origin-center text-white/90 pt-8 text-3xl font-black leading-[1.2] block font-mono`}
         >
           {title}
         </motion.h3>
         <p
-          className={`${carme.className} z-20 block mt-4 text-white/60 px-5 font-normal`}
+          className={`${carme.className} z-20 block mt-4 text-white/60 px-8 font-normal italic`}
         >
-          {description}
+          <span className="italic">{description}</span>
         </p>
       </div>
     </motion.div>

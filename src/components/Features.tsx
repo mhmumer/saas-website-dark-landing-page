@@ -39,21 +39,24 @@ export const Features = () => {
       <div className="absolute inset-0 z-0 overflow-hidden"></div>
       <div className="container mx-auto relative z-10">
         <h2
-          className={`text-center z-10 font-bold xl:text-6xl text-4xl tracking-tighter ${BricolageGrotesque.className}`}
+          className={`text-center z-10 font-bold xl:text-6xl text-3xl tracking-tighter ${BricolageGrotesque.className} `}
         >
-          Experience a web revolution
+          <span className="text-4xl xl:text-6xl ">Experience a </span>
+          <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] italic text-5xl xl:text-[4rem] ">
+            Web Revolution
+          </span>
         </h2>
 
         <div className="max-w-4xl mx-auto">
           <p
-            className={`${carme.className} text-center mt-5 text-lg lg:max-w-3xl xl:max-w-3xl mx-auto text-white/70`}
+            className={`${carme.className} text-center mt-5 text-lg lg:max-w-3xl xl:max-w-3xl mx-auto text-white/70 `}
           >
             Enjoy top-tier security with advanced encryption, embrace seamless,
             responsive designs for every device, and boost your online presence
             with expert SEO optimization for maximum visibility and success.
           </p>
         </div>
-        <div className="mt-16 flex flex-wrap gap-6 sm:flex-1 relative items-center justify-center">
+        <div className="mt-16 flex flex-wrap gap-3 sm:flex-1 relative items-center justify-center">
           {features.map(({ title, description, img }) => (
             <Feature
               key={title}

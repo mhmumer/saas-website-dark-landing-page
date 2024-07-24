@@ -4,7 +4,7 @@ import React from "react";
 import {
   SiPython,
   SiNextdotjs,
-  SiTypescript,
+  SiAdobe,
   SiDjango,
   SiShopify,
   SiFastapi,
@@ -13,15 +13,16 @@ import {
   SiFlask,
   SiFlutter,
   SiReact,
-  SiAdobe,
+  SiWebflow,
   SiFigma,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandAdobe } from "react-icons/tb";
 import { useAnimate } from "framer-motion";
 
 export const Example = () => {
   return (
-    <div className="bg-black px-4 py-12">
+    <div className="bg-[#02050e] px-4 py-12 ">
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />
       </div>
@@ -38,7 +39,7 @@ const ClipPathLinks = () => {
       <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
         <div className="grid grid-cols-2 divide-x divide-neutral-500">
           <LinkBox Icon={SiShopify} />
-          <LinkBox Icon={SiAdobe} />
+          <LinkBox Icon={SiWebflow} />
         </div>
         <div className="grid grid-cols-3 divide-x divide-neutral-500">
           <LinkBox Icon={SiPython} />
@@ -47,9 +48,9 @@ const ClipPathLinks = () => {
         </div>
         <div className="grid grid-cols-4 divide-x divide-neutral-500">
           <LinkBox Icon={SiNextdotjs} />
-          <LinkBox Icon={SiTypescript} />
           <LinkBox Icon={SiReact} />
           <LinkBox Icon={SiFigma} />
+          <LinkBox Icon={TbBrandAdobe} />
         </div>
         <div className="grid grid-cols-2 divide-x divide-neutral-500">
           <LinkBox Icon={SiFlutter} />
