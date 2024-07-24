@@ -30,34 +30,34 @@ export const Example = () => {
 };
 
 const ClipPathLinks = () => {
-   return (
-     <main className="my-24">
-       <h1 className="relative items-center justify-center text-center text-white/90 sm:text-6xl text-4xl font-sans font-black">
-         Our Development Stack
-       </h1>
-       <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
-         <div className="grid grid-cols-2 divide-x divide-neutral-500">
-           <LinkBox Icon={SiShopify} />
-           <LinkBox Icon={SiAdobe} />
-         </div>
-         <div className="grid grid-cols-3 divide-x divide-neutral-500">
-           <LinkBox Icon={SiPython} />
-           <LinkBox Icon={SiDjango} />
-           <LinkBox Icon={SiFastapi}  />
-         </div>
-         <div className="grid grid-cols-4 divide-x divide-neutral-500">
-           <LinkBox Icon={SiNextdotjs} />
-           <LinkBox Icon={SiTypescript} />
-           <LinkBox Icon={SiReact} />
-           <LinkBox Icon={SiFigma} />
-         </div>
-         <div className="grid grid-cols-2 divide-x divide-neutral-500">
-           <LinkBox Icon={SiFlutter}  />
-           <LinkBox Icon={TbBrandReactNative} />
-         </div>
-       </div>
-     </main>
-   );
+  return (
+    <main className="my-24">
+      <h1 className="relative items-center justify-center text-center text-white/90 sm:text-6xl text-4xl font-sans font-black">
+        Our Development Stack
+      </h1>
+      <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
+        <div className="grid grid-cols-2 divide-x divide-neutral-500">
+          <LinkBox Icon={SiShopify} />
+          <LinkBox Icon={SiAdobe} />
+        </div>
+        <div className="grid grid-cols-3 divide-x divide-neutral-500">
+          <LinkBox Icon={SiPython} />
+          <LinkBox Icon={SiDjango} />
+          <LinkBox Icon={SiFastapi} />
+        </div>
+        <div className="grid grid-cols-4 divide-x divide-neutral-500">
+          <LinkBox Icon={SiNextdotjs} />
+          <LinkBox Icon={SiTypescript} />
+          <LinkBox Icon={SiReact} />
+          <LinkBox Icon={SiFigma} />
+        </div>
+        <div className="grid grid-cols-2 divide-x divide-neutral-500">
+          <LinkBox Icon={SiFlutter} />
+          <LinkBox Icon={TbBrandReactNative} />
+        </div>
+      </div>
+    </main>
+  );
 };
 
 const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
@@ -66,41 +66,44 @@ const TOP_RIGHT_CLIP = "polygon(0 0, 0 100%, 100% 100%, 0% 100%)";
 const BOTTOM_LEFT_CLIP = "polygon(100% 100%, 100% 0, 100% 100%, 0 100%)";
 const TOP_LEFT_CLIP = "polygon(0 0, 100% 0, 100% 100%, 100% 0)";
 
-const ENTRANCE_KEYFRAMES = {
+const ENTRANCE_KEYFRAMES: Record<
+  "left" | "bottom" | "top" | "right",
+  string[]
+> = {
   left: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   bottom: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   top: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   right: [TOP_LEFT_CLIP, NO_CLIP],
 };
 
-const EXIT_KEYFRAMES = {
+const EXIT_KEYFRAMES: Record<"left" | "bottom" | "top" | "right", string[]> = {
   left: [NO_CLIP, TOP_RIGHT_CLIP],
   bottom: [NO_CLIP, TOP_RIGHT_CLIP],
   top: [NO_CLIP, TOP_RIGHT_CLIP],
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon }:{Icon:any}) => {
+const LinkBox = ({ Icon }: { Icon: any }) => {
   const [scope, animate] = useAnimate();
 
-  const getNearestSide = (e:any) => {
+  const getNearestSide = (e: any): "left" | "right" | "top" | "bottom" => {
     const box = e.target.getBoundingClientRect();
 
     const proximityToLeft = {
       proximity: Math.abs(box.left - e.clientX),
-      side: "left",
+      side: "left" as const,
     };
     const proximityToRight = {
       proximity: Math.abs(box.right - e.clientX),
-      side: "right",
+      side: "right" as const,
     };
     const proximityToTop = {
       proximity: Math.abs(box.top - e.clientY),
-      side: "top",
+      side: "top" as const,
     };
     const proximityToBottom = {
       proximity: Math.abs(box.bottom - e.clientY),
-      side: "bottom",
+      side: "bottom" as const,
     };
 
     const sortedProximity = [
@@ -113,7 +116,7 @@ const LinkBox = ({ Icon }:{Icon:any}) => {
     return sortedProximity[0].side;
   };
 
-  const handleMouseEnter = (e:any) => {
+  const handleMouseEnter = (e: any) => {
     const side = getNearestSide(e);
 
     animate(scope.current, {
