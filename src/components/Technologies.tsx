@@ -113,7 +113,7 @@ const LinkBox = ({ Icon }:{Icon:any}) => {
     return sortedProximity[0].side;
   };
 
-  const handleMouseEnter = (e) => {
+  const handleMouseEnter = (e:any) => {
     const side = getNearestSide(e);
 
     animate(scope.current, {
