@@ -14,7 +14,7 @@ export const Hero = () => {
     <main
       className={` bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`}
     >
-      <div className="absolute h-[375px] sm:h-[768px] md:h-[1200px] lg:h-[2400px] w-[750px] sm:w-[1200px] md:w-[1200px] lg:w-[2600px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-150px)]"></div>
+      <div className="absolute h-[1200px] sm:h-[1500px] md:h-[1700px] lg:h-[1800px] w-[1000px] sm:w-[1600px] md:w-[1600px] lg:w-[2600px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE]/60  bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-150px)]"></div>
       <div className="container relative">
         <div className="flex items-center justify-center">
           <a
@@ -33,11 +33,10 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1
-              className={`${BricolageGrotesque.className} text-4xl sm:text-7xl leading-10 font-black tracking-tighter text-center  inline-flex`}
+              className={`${BricolageGrotesque.className} text-3xl sm:text-7xl leading-10  font-black tracking-tighter text-center  inline-flex`}
             >
               Digitally projecting
-              <br />
-              heartfelt dreams
+              <br /> dreams born in hearts
             </h1>
           </div>
         </div>
@@ -51,7 +50,7 @@ export const Hero = () => {
           </p>
         </div>
         <div className="flex justify-center mt-9   opacity-95 relative">
-          <button className="rounded-md  bg-white px-6 py-3 border-dashed border-gray-300 border font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[5px_5px_0px_black] active:translate-x-[0px] active:translate-y-[0px]  active:shadow-none">
+          <button className="rounded-md  bg-white px-8 py-3 text-lg font-mono tracking-wide border-dashed border-gray-100 border font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[5px_5px_0px_black] active:translate-x-[0px] active:translate-y-[0px]  active:shadow-none">
             <span className="relative z-10">Get Started</span>
           </button>
         </div>

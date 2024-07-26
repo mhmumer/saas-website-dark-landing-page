@@ -43,7 +43,7 @@ export const Features = () => {
         >
           <span className="text-4xl xl:text-6xl ">Experience a </span>
           <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] italic text-5xl xl:text-[4rem] ">
-            Web Revolution
+            Web Revolution. 
           </span>
         </h2>
 

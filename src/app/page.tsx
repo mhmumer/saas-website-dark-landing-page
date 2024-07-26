@@ -10,6 +10,7 @@ import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 import Present from "@/components/projectvid";
 import { Example } from "@/components/Technologies";
+import Services from "@/components/Services";
 
 
 export const metadata: Metadata = {
@@ -20,13 +21,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      
-      
       <Hero />
       <LogoTicker />
-      <Example/>
       <Features />
-      <Present/>
+      <Services/>
+      <Example />
+      <Present />
       <FAQs />
       {/* <CallToAction /> */}
       <Footer />

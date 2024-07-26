@@ -144,7 +144,7 @@ function Navbar() {
         <div className="flex justify-center">
           <div className="border relative opacity-90 border-opacity-20 mx-auto -top-1   border-gray-100 rounded-full bg-white/10 backdrop-blur bg-opacity-[0.9]">
             <nav
-              className={`${BricolageGrotesque.className} flex text-base  text-slate-200 lg:text-[1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-5 font-base items-center`}
+              className={`${BricolageGrotesque.className} flex text-base  text-slate-300 lg:text-[1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-5 font-base items-center`}
             >
               <a
                 href="#"
