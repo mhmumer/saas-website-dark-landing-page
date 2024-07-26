@@ -1,6 +1,6 @@
 "use client"
 
-import { Roboto_Condensed, Carme } from "next/font/google";
+import { Poppins, Carme } from "next/font/google";
 import { motion } from "framer-motion";
 
 import {
@@ -89,37 +89,45 @@ const services = [
 ];
 
 
-const RobotoCondensed = Roboto_Condensed({ subsets: ["latin"] });
+// const RobotoCondensed = Roboto_Condensed({ subsets: ["latin"] });
 const carme = Carme({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const text =
   "Shopify Development / Webflow Development / Website Development / SaaS Development / Shopify Management / Website Management / Website Redesign / Chatbot Development / SEO / Digital Marketing / Graphic Design / Landing Page Design";
 
 const Services: React.FC = () => {
    return (
-     <main className="pt-4 pb-24 bg-[#f8f7f5]">
+     <main className="pt-6 pb-24 bg-[#f8f7f5]">
        <div className="overflow-hidden whitespace-nowrap">
          <motion.div
-           className={`flex space-x-4 sm:text-3xl lg:text-4xl xl:text-5xl text-xl sm:font-bold font-semibold italic mb-4`}
+           className={`flex space-x-4 sm:text-2xl lg:text-2xl xl:text-3xl text-xl sm:font-bold font-semibold  mb-4 ${poppins.className}`}
            initial={{ x: 0 }}
            animate={{ x: "-100%" }}
            transition={{ ease: "linear", duration: 20, repeat: Infinity }}
          >
-           <div>{text}</div>
-           <div>{text}</div>
-           <div>{text}</div>
-           <div>{text}</div>
+           <div>
+             <h3 className="italic">{text}</h3>
+           </div>
+           <div>
+             <h3 className="italic">{text}</h3>
+           </div>
+           <div>
+             <h3 className="italic">{text}</h3>
+           </div>
+           <div>
+             <h3 className="italic">{text}</h3>
+           </div>
          </motion.div>
        </div>
        <div className="relative  mt-32">
          <h2
-           className={`text-6xl font-bold items-center justify-center   text-center`}
+           className={`text-6xl font-semibold items-center justify-center   text-center ${poppins.className} font-mono`}
          >
-           A Website agency that does it
+           A Website Agency that does it
            <span
-             className={`italic ml-3 bg-[linear-gradient(to_right,#da28e4,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] tracking-tighter`}
+             className={`italic ml-2 bg-[linear-gradient(to_right,#da28e4,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] tracking-tighter`}
            >
-             
              all.
            </span>
          </h2>
