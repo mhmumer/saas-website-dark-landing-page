@@ -25,21 +25,13 @@ const faqs = [
     answer:
       "The timeline for project completion varies depending on the complexity and scope of the project. We will provide an estimated timeline during the initial consultation and keep you updated throughout the development process. We can deliver as quickly as the client needs.",
   },
-  {
-    question: "Do you offer ongoing support and maintenance?",
-    answer:
-      "Yes, we offer ongoing support and maintenance packages to ensure your website remains up-to-date, secure, and running smoothly. We’re here to help with any updates or issues that may arise post-launch.",
-  },
+ 
   {
     question: "What sets Mutecx apart from other digital agencies?",
     answer:
       "At Mutecx, we pride ourselves on our commitment to innovation, quality, and client satisfaction. Our bespoke approach ensures that each project is tailored to meet the specific needs and goals of our clients, delivering exceptional results every time.",
   },
-  {
-    question: "Can you help with digital marketing and SEO?",
-    answer:
-      "Absolutely! We provide digital marketing and SEO services to help increase your online visibility, drive traffic to your site, and improve your search engine rankings. Our strategies are designed to deliver measurable results and maximize your ROI.",
-  },
+
   {
     question: "How much do your services cost?",
     answer:
