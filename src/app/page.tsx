@@ -25,8 +25,8 @@ export default function Home() {
       <LogoTicker />
       <Features />
       <Services/>
-      <Example />
       <Present />
+      <Example />
       <FAQs />
       {/* <CallToAction /> */}
       <Footer />
