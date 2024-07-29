@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import MessageImage from "@/assets/images/message.png";
 import CursorImage from "@/assets/images/cursor.png";
 
+
 const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 const carme = Carme({ subsets: ["latin"], weight: "400" });
 
@@ -35,38 +36,41 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="relative bg-black text-white py-[72px] sm:py-24">
-      <div className="absolute inset-0 z-0 overflow-hidden"></div>
-      <div className="container mx-auto relative z-10">
-        <h2
-          className={`text-center z-10 font-bold xl:text-6xl text-3xl tracking-tighter ${BricolageGrotesque.className} `}
-        >
-          <span className="text-4xl xl:text-6xl ">Experience a </span>
-          <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] italic text-5xl xl:text-[4rem] ">
-            Web Revolution. 
-          </span>
-        </h2>
-
-        <div className="max-w-4xl mx-auto">
-          <p
-            className={`${carme.className} text-center mt-5 text-lg lg:max-w-3xl xl:max-w-3xl mx-auto text-white/70 `}
+    <main className=" sticky h-screen top-0 overflow-clip z-0">
+      <div className="relative bg-black text-white py-[72px] sm:py-24">
+        <div className="absolute inset-0 z-0 overflow-hidden"></div>
+        <div className="container mx-auto relative z-10">
+          <h2
+            className={`text-center z-10 font-bold xl:text-6xl text-3xl tracking-tighter ${BricolageGrotesque.className} `}
           >
-            Enjoy top-tier security with advanced encryption, embrace seamless,
-            responsive designs for every device, and boost your online presence
-            with expert SEO optimization for maximum visibility and success.
-          </p>
-        </div>
-        <div className="mt-16 flex flex-wrap gap-3 sm:flex-1 relative items-center justify-center">
-          {features.map(({ title, description, img }) => (
-            <Feature
-              key={title}
-              title={title}
-              description={description}
-              img={img}
-            />
-          ))}
+            <span className="text-4xl xl:text-6xl ">Experience a </span>
+            <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text] italic text-5xl xl:text-[4rem] ">
+              Web Revolution.
+            </span>
+          </h2>
+
+          <div className="max-w-4xl mx-auto">
+            <p
+              className={`${carme.className} text-center mt-5 text-lg lg:max-w-3xl xl:max-w-3xl mx-auto text-white/70 `}
+            >
+              Enjoy top-tier security with advanced encryption, embrace
+              seamless, responsive designs for every device, and boost your
+              online presence with expert SEO optimization for maximum
+              visibility and success.
+            </p>
+          </div>
+          <div className="mt-16 flex flex-wrap gap-3 sm:flex-1 relative items-center justify-center">
+            {features.map(({ title, description, img }) => (
+              <Feature
+                key={title}
+                title={title}
+                description={description}
+                img={img}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };

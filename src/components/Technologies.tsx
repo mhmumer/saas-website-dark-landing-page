@@ -22,7 +22,7 @@ import { useAnimate } from "framer-motion";
 
 export const Example = () => {
   return (
-    <div className="bg-[#02050e] px-4 py-12 ">
+    <div className="bg-black px-4 py-12  z-10 relative w-full ">
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />
       </div>
@@ -32,29 +32,31 @@ export const Example = () => {
 
 const ClipPathLinks = () => {
   return (
-    <main className="my-24">
-      <h1 className="relative items-center justify-center text-center text-white/90 sm:text-6xl text-4xl font-sans font-black">
-        Our Development Stack
-      </h1>
-      <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
-        <div className="grid grid-cols-2 divide-x divide-neutral-500">
-          <LinkBox Icon={SiShopify} />
-          <LinkBox Icon={SiWebflow} />
-        </div>
-        <div className="grid grid-cols-3 divide-x divide-neutral-500">
-          <LinkBox Icon={SiPython} />
-          <LinkBox Icon={SiDjango} />
-          <LinkBox Icon={SiFastapi} />
-        </div>
-        <div className="grid grid-cols-4 divide-x divide-neutral-500">
-          <LinkBox Icon={SiNextdotjs} />
-          <LinkBox Icon={SiReact} />
-          <LinkBox Icon={SiFigma} />
-          <LinkBox Icon={TbBrandAdobe} />
-        </div>
-        <div className="grid grid-cols-2 divide-x divide-neutral-500">
-          <LinkBox Icon={SiFlutter} />
-          <LinkBox Icon={TbBrandReactNative} />
+    <main className="bg-black">
+      <div className="my-24 ">
+        <h1 className="relative items-center justify-center text-center text-white/90 sm:text-6xl text-4xl font-sans font-black">
+          Our Development Stack
+        </h1>
+        <div className="divide-y text-white divide-neutral-500 border border-neutral-500 mt-20 cursor-crosshair">
+          <div className="grid grid-cols-2 divide-x divide-neutral-500">
+            <LinkBox Icon={SiShopify} />
+            <LinkBox Icon={SiWebflow} />
+          </div>
+          <div className="grid grid-cols-3 divide-x divide-neutral-500">
+            <LinkBox Icon={SiPython} />
+            <LinkBox Icon={SiDjango} />
+            <LinkBox Icon={SiFastapi} />
+          </div>
+          <div className="grid grid-cols-4 divide-x divide-neutral-500">
+            <LinkBox Icon={SiNextdotjs} />
+            <LinkBox Icon={SiReact} />
+            <LinkBox Icon={SiFigma} />
+            <LinkBox Icon={TbBrandAdobe} />
+          </div>
+          <div className="grid grid-cols-2 divide-x divide-neutral-500">
+            <LinkBox Icon={SiFlutter} />
+            <LinkBox Icon={TbBrandReactNative} />
+          </div>
         </div>
       </div>
     </main>

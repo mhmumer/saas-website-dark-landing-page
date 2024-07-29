@@ -98,7 +98,7 @@ const text =
 
 const Services: React.FC = () => {
    return (
-     <main className="pt-6 pb-24 bg-[#f8f7f5]">
+     <main className="pt-6 pb-24 bg-[#f8f7f5] sticky">
        <div className="overflow-hidden whitespace-nowrap">
          <motion.div
            className={`flex space-x-4 sm:text-2xl lg:text-2xl xl:text-3xl text-xl sm:font-bold font-semibold  mb-4 ${poppins.className}`}
@@ -135,7 +135,7 @@ const Services: React.FC = () => {
            {services.map((service, index) => (
              <div
                key={index}
-               className="p-4 border-2 border-black rounded-lg text-left sm:bg-none sm:hover:bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#2FD8FE)] bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#2FD8FE)] transition-colors duration-300 "
+               className="p-6 border-2 border-black rounded-[4rem] text-left sm:bg-none sm:hover:bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#2FD8FE)] bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#2FD8FE)] transition-colors duration-300 "
              >
                <div className=" pb-10  ">{service.icon}</div>
                <h3 className="text-2xl font-bold italic pb-2">

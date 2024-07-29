@@ -30,12 +30,12 @@ export default function Present() {
 
   return (
     <motion.main
-      className=" p-8"
+      className="sticky lg:h-screen top-0"
       style={{
         backgroundImage,
       }}
     >
-      <div className="rounded-xl overflow-hidden  bg-black">
+      <div className=" overflow-hidden  bg-black">
         <BackgroundVideo src="video/present.mp4" />
       </div>
     </motion.main>

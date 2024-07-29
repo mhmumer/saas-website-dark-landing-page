@@ -24,9 +24,11 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <Features />
-      <Services/>
+      <Services />
       <Present />
-      <Example />
+      <div className="bg-black">
+        <Example />
+      </div>
       <FAQs />
       {/* <CallToAction /> */}
       <Footer />

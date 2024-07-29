@@ -100,7 +100,7 @@ const Accordion = ({
 
 export const FAQs = () => {
   return (
-    <main className="bg-black text-white bg-gradient-to-b from-[#5D2CA8]/90 to-black py-[72px] sm:py-24">
+    <main className="bg-black text-white bg-gradient-to-b from-[#5D2CA8]/90 to-black py-[72px] sm:py-24 z-20 relative ">
       <div className="container">
         <h2
           className={`text-center text-5xl lg:text-6xl max-w-[788px] mx-auto font-bold tracking-tight ${BricolageGrotesque.className}`}
