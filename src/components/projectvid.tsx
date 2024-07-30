@@ -40,7 +40,7 @@ export default function Present() {
     >
       <DotGrid />
       <div className=" ">
-        <h2 className={`z-20 text-gray-100 text-5xl sm:text-6xl lg:text-7xl font-bold mr-3 text-center relative ${BricolageGrotesque.className}`}>
+        <h2 className={`z-20 text-gray-100 text-5xl sm:text-6xl lg:text-7xl font-bold  text-center relative ${BricolageGrotesque.className}`}>
           Showcase of Excellence
         </h2>
         
@@ -82,7 +82,7 @@ const DotGrid = () => {
     for (let j = 0; j < GRID_HEIGHT; j++) {
       dots.push(
         <div
-          className="group cursor-crosshair rounded-full p-2 transition-colors hover:bg-slate-600"
+          className="group cursor-crosshair rounded-full p-4 transition-colors hover:bg-slate-600"
           data-index={index}
           key={`${i}-${j}`}
         >
@@ -100,7 +100,7 @@ const DotGrid = () => {
     <div
       onClick={handleDotClick}
       style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      className="grid sm:w-[900px] overflow-hidden sm:h-[700px] absolute z-0 "
+      className="grid sm:w-[920px] overflow-hidden sm:h-[700px] absolute z-0 "
     >
       {dots}
     </div>
