@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundVideo from "next-video/background-video";
 import {
   useMotionTemplate,
@@ -8,7 +8,6 @@ import {
   motion,
   animate,
 } from "framer-motion";
-import { useEffect } from "react";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -30,13 +29,16 @@ export default function Present() {
 
   return (
     <motion.main
-      className="sticky lg:h-screen top-0"
+      className="sticky lg:h-screen top-0 w-full h-full  flex items-center justify-center overflow-hidden bg-[#58296f]"
       style={{
         backgroundImage,
       }}
     >
-      <div className=" overflow-hidden  bg-black">
-        <BackgroundVideo src="video/present.mp4" />
+      <div className=" ">
+        <h2 className=" text-white text-5xl sm:text-6xl lg:text-7xl font-bold text-center">
+          Showcase of Excellence
+        </h2>
+        
       </div>
     </motion.main>
   );

@@ -36,7 +36,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <main className=" sticky h-screen top-0 overflow-clip z-0">
+    <main className=" ">
       <div className="relative bg-black text-white py-[72px] sm:py-24">
         <div className="absolute inset-0 z-0 overflow-hidden"></div>
         <div className="container mx-auto relative z-10">

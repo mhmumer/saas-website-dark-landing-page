@@ -21,8 +21,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LogoTicker />
+      <div className=" sticky  top-0 overflow-clip z-0">
+        <Hero />
+        <LogoTicker />
+      </div>
       <Features />
       <Services />
       <Present />
