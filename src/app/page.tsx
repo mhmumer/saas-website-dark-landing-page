@@ -11,6 +11,7 @@ import { Footer } from "@/components/Footer";
 import Present from "@/components/projectvid";
 import { Example } from "@/components/Technologies";
 import Services from "@/components/Services";
+import HoverLinks from "@/components/projects";
 
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function Home() {
       <Present />
       <div className="bg-black">
         <Example />
+        <HoverLinks/>
       </div>
       <FAQs />
       {/* <CallToAction /> */}
