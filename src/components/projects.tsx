@@ -1,25 +1,29 @@
-import React from 'react'
+"use client";
+
+import React from "react";
 import SharkBlankie from "../assets/images/sharkblankie.png";
 import Dastaan from "../assets/images/dastaanerumaan.png";
 import HimLeather from "../assets/images/himleather.png";
-import Image from 'next/image';
+import BiryaniMan from "../assets/images/biryaniman.png";
+import Image from "next/image";
 import { Josefin_Sans, Carme } from "next/font/google";
-import Link from 'next/link';
+import Link from "next/link";
+import Example from "./prohorizontal";
 
 const josefinsans = Josefin_Sans({ subsets: ["latin"] });
 const carme = Carme({ subsets: ["latin"], weight: "400" });
 
 export default function Projects() {
   return (
-    <section className=" bg-[#0f0d10] relative z-10">
-      <div className=" bg-[#0f0d10] overflow-hidden ">
-        <main className="bg-[#0f0d10] lg:px-8 sm:px-4 relative z-20 py-24 items-center justify-center flex overflow-hidden ">
-          <div className="group relative backdrop-blur bg-white/10 sm:py-10 sm:px-10 rounded-3xl border border-gray-300 border-opacity-40 px-16 overflow-hidden">
+    <section className=" bg-[#120606] relative z-20 hidden sm:inline">
+      <div className="  overflow-hidden ">
+        <main className=" lg:px-8 sm:px-4 relative z-20 py-24 items-center justify-center flex overflow-hidden ">
+          <div className="group relative backdrop-blur  sm:py-10 sm:px-10 rounded-3xl   px-16 overflow-hidden">
             <div className="max-w-7xl flex flex-row  relative">
               <Image
                 src={SharkBlankie}
                 alt=""
-                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-lg "
+                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-lg mr-6"
               />
               <div className="flex-row  px-10 py-3">
                 <h3
@@ -44,8 +48,8 @@ export default function Projects() {
             </div>
           </div>
         </main>
-        <main className="bg-[#0f0d10] lg:px-8 sm:px-4 relative z-20 pb-24 items-center justify-center flex  ">
-          <div className="group relative backdrop-blur bg-white/10 py-10 px-12   rounded-3xl border border-gray-300 border-opacity-40">
+        <main className=" lg:px-8 sm:px-4 relative z-20 pb-24 items-center justify-center flex  ">
+          <div className="group relative backdrop-blur  py-10 px-12   ">
             <div className="max-w-7xl flex relative">
               <div className="flex-row px-8 text-right">
                 <h3
@@ -63,7 +67,7 @@ export default function Projects() {
               <Image
                 src={Dastaan}
                 alt=""
-                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl "
+                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl ml-6"
               />
               <Link
                 href={"#"}
@@ -75,13 +79,13 @@ export default function Projects() {
             </div>
           </div>
         </main>
-        <main className="bg-[#0f0d10] px-8 relative z-20 pb-24 items-center justify-center flex overflow-hidden ">
-          <div className="group relative backdrop-blur bg-white/10 sm:py-10 sm:px-10 rounded-3xl border border-gray-300 border-opacity-40 px-16 ">
+        <main className=" px-8 relative z-20 -mb-[25rem] items-center justify-center flex overflow-hidden ">
+          <div className="group relative backdrop-blur  sm:py-10 sm:px-10  px-16 ">
             <div className="max-w-7xl sm:flex flex-row relative">
               <Image
                 src={HimLeather}
                 alt=""
-                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl "
+                className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl mr-6"
               />
               <div className="flex-row  px-10 py-3">
                 <h3
@@ -107,101 +111,7 @@ export default function Projects() {
           </div>
         </main>
 
-        <div className="flex flex-wrap relative items-center justify-center px-4  gap-8">
-          <main className="bg-[#0f0d10]  relative z-20 pb-24  overflow-hidden ">
-            <div className="group relative backdrop-blur bg-white/10 py-4  rounded-3xl border border-gray-300 border-opacity-40 px-4 ">
-              <div className="max-w-7xl  flex-row relative">
-                <Image
-                  src={HimLeather}
-                  alt=""
-                  className="sm:w-[30rem] sm:h-[18rem] rounded-xl "
-                />
-                <div className="flex-row  px-2  py-6 pb-16 text-left">
-                  <h3
-                    className={`text-5xl text-white/90 group-hover:text-white
-                ${josefinsans.className} font-bold`}
-                  >
-                    HimLeather
-                  </h3>
-                  <p
-                    className={`text-white text-lg font-bold pt-1 text-white/90 group-hover:text-white ${carme.className} `}
-                  >
-                    A dropshipping store for Leather Products.
-                  </p>
-                </div>
-                <Link
-                  href={"#"}
-                  className="text-white -bottom-1  absolute right-0 lg:group-hover:bg-white/10 border border-opacity-40
-             border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-red-500  transition-colors duration-300"
-                >
-                  Visit Now
-                </Link>
-              </div>
-            </div>
-          </main>
-          <main className="bg-[#0f0d10]  relative z-20 pb-24  overflow-hidden ">
-            <div className="group relative backdrop-blur bg-white/10 py-4  rounded-3xl border border-gray-300 border-opacity-40 px-4 ">
-              <div className="max-w-7xl  flex-row relative">
-                <Image
-                  src={HimLeather}
-                  alt=""
-                  className="sm:w-[30rem] sm:h-[18rem] rounded-lg "
-                />
-                <div className="flex-row  px-2  py-6 pb-16 text-left">
-                  <h3
-                    className={`text-5xl text-white/90 group-hover:text-white
-                ${josefinsans.className} font-bold`}
-                  >
-                    HimLeather
-                  </h3>
-                  <p
-                    className={`text-white text-lg font-bold pt-1 text-white/90 group-hover:text-white ${carme.className} `}
-                  >
-                    A dropshipping store for Leather Products.
-                  </p>
-                </div>
-                <Link
-                  href={"#"}
-                  className="text-white -bottom-1  absolute -right-10 lg:group-hover:bg-white/10 border border-opacity-40
-             border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-red-500 mr-10 transition-colors duration-300"
-                >
-                  Visit Now
-                </Link>
-              </div>
-            </div>
-          </main>
-          <main className="bg-[#0f0d10]  relative z-20 pb-24  overflow-hidden ">
-            <div className="group relative backdrop-blur bg-white/10 py-4  rounded-3xl border border-gray-300 border-opacity-40 px-4 ">
-              <div className="max-w-7xl  flex-row relative">
-                <Image
-                  src={HimLeather}
-                  alt=""
-                  className="sm:w-[30rem] sm:h-[18rem] rounded-lg "
-                />
-                <div className="flex-row  px-2  py-6 pb-16 text-left">
-                  <h3
-                    className={`text-5xl text-white/90 group-hover:text-white
-                ${josefinsans.className} font-bold`}
-                  >
-                    HimLeather
-                  </h3>
-                  <p
-                    className={`text-white text-lg font-bold pt-1 text-white/90 group-hover:text-white ${carme.className} `}
-                  >
-                    A dropshipping store for Leather Products.
-                  </p>
-                </div>
-                <Link
-                  href={"#"}
-                  className="text-white -bottom-1  absolute -right-10 lg:group-hover:bg-white/10 border border-opacity-40
-             border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-red-500 mr-10 transition-colors duration-300"
-                >
-                  Visit Now
-                </Link>
-              </div>
-            </div>
-          </main>
-        </div>
+        <Example />
       </div>
     </section>
   );

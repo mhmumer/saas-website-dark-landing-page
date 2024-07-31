@@ -33,7 +33,7 @@ export default function Present() {
 
   return (
     <motion.main
-      className="sticky h-screen top-0 w-full   flex items-center justify-center overflow-hidden bg-[#58296f]"
+      className="sticky h-screen top-0 w-full  hidden sm:flex items-center justify-center overflow-hidden bg-[#58296f]"
       style={{
         backgroundImage,
       }}

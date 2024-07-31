@@ -22,7 +22,7 @@ import { useAnimate } from "framer-motion";
 
 export const Example = () => {
   return (
-    <div className="bg-black px-4 py-12  z-10 relative w-full ">
+    <div className="bg-black px-4 py-12 z-10 relative w-full ">
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />
       </div>
