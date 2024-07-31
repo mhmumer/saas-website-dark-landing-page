@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { LogoTicker } from "@/components/LogoTicker";
 import { Features } from "@/components/Features";
-import { ProductShowcase } from "@/components/ProductShowcase";
 import { FAQs } from "@/components/FAQs";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
@@ -12,6 +11,7 @@ import Present from "@/components/projectvid";
 import { Example } from "@/components/Technologies";
 import Services from "@/components/Services";
 import HoverLinks from "@/components/projects";
+import Projects from "@/components/projects";
 
 
 export const metadata: Metadata = {
@@ -29,9 +29,10 @@ export default function Home() {
       <Features />
       <Services />
       <Present />
+      <Projects/>
       <div className="bg-black">
         <Example />
-        <HoverLinks/>
+        
       </div>
       <FAQs />
       {/* <CallToAction /> */}
