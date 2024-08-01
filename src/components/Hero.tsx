@@ -50,8 +50,10 @@ export const Hero = () => {
           </p>
         </div>
         <div className="flex justify-center mt-9   opacity-95 relative">
-          <button className="rounded-md  bg-white px-8 py-3 text-lg font-mono tracking-wide border-dashed border-gray-100 border font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[5px_5px_0px_black] active:translate-x-[0px] active:translate-y-[0px]  active:shadow-none">
-            <span className="relative z-10">Get Started</span>
+          <button className="rounded-md  bg-white px-8 py-3 text-lg font-mono tracking-wide border-dashed border-gray-100 border font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[5px_5px_0px_black] active:translate-x-[0px] active:translate-y-[0px]  active:shadow-none ">
+            <span className="relative z-10">
+              <a href="#contact">Get Started</a>
+            </span>
           </button>
         </div>
       </div>
