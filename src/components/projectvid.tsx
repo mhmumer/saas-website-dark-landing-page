@@ -60,7 +60,7 @@ export default function Present() {
       
     >
       <motion.main
-        className="sticky h-screen top-0 w-full  hidden sm:flex items-center justify-center overflow-hidden bg-[#58296f] z-20"
+        className="sticky h-screen top-0 w-full flex items-center justify-center overflow-hidden bg-[#58296f] z-20"
         style={{
           backgroundImage,
         }}
@@ -70,7 +70,7 @@ export default function Present() {
             className={`z-20 text-gray-100 text-5xl xl:text-5xl  lg:text-7xl font-bold flex text-center relative ${BricolageGrotesque.className}`}
           >
             Showcase of Excellence
-            <FiMousePointer className=" mt-1" />
+            <FiMousePointer className=" mt-1 hidden  sm:inline" />
           </h2>
           <motion.a
             style={{
@@ -192,7 +192,7 @@ const MouseImageTrail = ({
   return (
     <div
       ref={scope}
-      className=" overflow-hidden sticky h-screen top-0 w-full  hidden sm:flex"
+      className=" overflow-hidden sticky h-screen top-0 w-full  flex"
       onMouseMove={handleMouseMove}
     >
       {children}

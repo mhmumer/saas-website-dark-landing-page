@@ -19,12 +19,12 @@ export const Contact = () => {
      <main className="relative bg-[#f8f7f5] px-3 z-20 items-center justify-center flex">
        <section
          id="contact"
-         className="mt-40 mb-20 sm:mb-28 w-[min(100%,58rem)] text-center relative "
+         className="mt-40 mb-20 sm:mb-28 w-[min(100%,50rem)] text-center relative "
        >
            
             <h3 className={`text-6xl ${BricolageGrotesque.className} font-black`}>Contact Us</h3>
 
-         <form action={action} className="mt-28 flex  flex-col">
+         <form action={action} className="mt-16 flex  flex-col">
           
            <input
              placeholder="Enter Your Email"
