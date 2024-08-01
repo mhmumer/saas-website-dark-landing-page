@@ -4,6 +4,9 @@ import sendEmail from '@/lib/sendEmails'
 import { Bricolage_Grotesque } from "next/font/google";
 import Message from "@/assets/images/message.png"
 import Image from 'next/image';
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({ subsets: ["latin"]});
 
 const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -21,14 +24,14 @@ export const Contact = () => {
          id="contact"
          className="mt-40 mb-20 sm:mb-28 w-[min(100%,50rem)] text-center relative "
        >
-           
-            <h3 className={`text-6xl ${BricolageGrotesque.className} font-black`}>Contact Us</h3>
+         <h3 className={`text-6xl ${BricolageGrotesque.className} font-black`}>
+           Contact Us
+         </h3>
 
          <form action={action} className="mt-16 flex  flex-col">
-          
            <input
-             placeholder="Enter Your Email"
-             className="h-[4.5rem] px-4 mb-2 rounded-2xl border border-black/10 "
+             placeholder="eg. example@gmail.com"
+             className={`h-[4.5rem] px-5 mb-2 rounded-2xl border border-black/10 text-lg font-normal ${rubik.className}`}
              type="email"
              name="senderEmail"
              required
@@ -36,7 +39,7 @@ export const Contact = () => {
            />
            <textarea
              placeholder="Enter Your Message"
-             className="h-60 mb-4 my-1 rounded-xl border border-black/10 p-4"
+             className={`h-60 mb-4 my-1 rounded-2xl border border-black/10 p-5 text-lg font-normal ${rubik.className}`}
              name="message"
              id=""
              cols={30}
