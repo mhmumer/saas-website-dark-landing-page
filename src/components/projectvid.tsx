@@ -147,44 +147,47 @@ const MouseImageTrail = ({
     const imageIndex = imageRenderCount.current % images.length;
     const selector = `[data-mouse-move-index="${imageIndex}"]`;
 
-    const el = document.querySelector(selector);
+    const el = document.querySelector<HTMLElement>(selector);
 
-    el.style.top = `${lastRenderPosition.current.y}px`;
-    el.style.left = `${lastRenderPosition.current.x}px`;
-    el.style.zIndex = imageRenderCount.current.toString();
+    if (el !== null) {
+      el.style.top = `${lastRenderPosition.current.y}px`;
+      el.style.left = `${lastRenderPosition.current.x}px`;
+      el.style.zIndex = imageRenderCount.current.toString();
 
-    const rotation = Math.random() * rotationRange;
+      const rotation = Math.random() * rotationRange;
 
-    animate(
-      selector,
-      {
-        opacity: [0, 1],
-        transform: [
-          `translate(-50%, -25%) scale(0.5) ${
-            imageIndex % 2
-              ? `rotate(${rotation}deg)`
-              : `rotate(-${rotation}deg)`
-          }`,
-          `translate(-50%, -50%) scale(1) ${
-            imageIndex % 2
-              ? `rotate(-${rotation}deg)`
-              : `rotate(${rotation}deg)`
-          }`,
-        ],
-      },
-      { type: "spring", damping: 15, stiffness: 200 }
-    );
+      animate(
+        selector,
+        {
+          opacity: [0, 1],
+          transform: [
+            `translate(-50%, -25%) scale(0.5) ${
+              imageIndex % 2
+                ? `rotate(${rotation}deg)`
+                : `rotate(-${rotation}deg)`
+            }`,
+            `translate(-50%, -50%) scale(1) ${
+              imageIndex % 2
+                ? `rotate(-${rotation}deg)`
+                : `rotate(${rotation}deg)`
+            }`,
+          ],
+        },
+        { type: "spring", damping: 15, stiffness: 200 }
+      );
 
-    animate(
-      selector,
-      {
-        opacity: [1, 0],
-      },
-      { ease: "linear", duration: 0.5, delay: 5 }
-    );
+      animate(
+        selector,
+        {
+          opacity: [1, 0],
+        },
+        { ease: "linear", duration: 0.5, delay: 5 }
+      );
 
-    imageRenderCount.current = imageRenderCount.current + 1;
+      imageRenderCount.current = imageRenderCount.current + 1;
+    }
   };
+
 
   return (
     <div
