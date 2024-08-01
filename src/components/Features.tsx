@@ -8,6 +8,7 @@ import { Bricolage_Grotesque, Carme } from "next/font/google";
 import { motion } from "framer-motion";
 import MessageImage from "@/assets/images/message.png";
 import CursorImage from "@/assets/images/cursor.png";
+import { div } from "three/webgpu";
 
 
 const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
@@ -38,7 +39,6 @@ export const Features = () => {
   return (
     <main className=" ">
       <div className="relative bg-black text-white py-[72px] sm:py-24">
-        <div className="absolute inset-0 z-0 overflow-hidden"></div>
         <div className="container mx-auto relative z-10">
           <h2
             className={`text-center z-10 font-bold xl:text-6xl text-3xl tracking-tighter ${BricolageGrotesque.className} `}
@@ -59,14 +59,17 @@ export const Features = () => {
               visibility and success.
             </p>
           </div>
-          <div className="mt-16 flex flex-wrap gap-3 sm:flex-1 relative items-center justify-center">
+          <div className="mt-16 flex flex-wrap-reverse gap-5  sm:flex-1 relative items-center justify-center">
             {features.map(({ title, description, img }) => (
-              <Feature
-                key={title}
-                title={title}
-                description={description}
-                img={img}
-              />
+              <div>
+                <div className="absolute h-[18rem] sm:w-[20rem] w-[19rem]  z-10 bg-white/30 blur-xl" />
+                <Feature
+                  key={title}
+                  title={title}
+                  description={description}
+                  img={img}
+                />
+              </div>
             ))}
           </div>
         </div>

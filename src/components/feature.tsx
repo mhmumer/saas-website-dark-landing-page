@@ -36,49 +36,33 @@ export const Feature = ({
   }, []);
 
   return (
-    <motion.div
+    <div
       key={title}
-      whileHover="hover"
-      variants={{
-        hover: {
-          scale: 1.05,
-        },
-      }}
-      transition={{
-        duration: 0.7,
-        ease: "backInOut",
-      }}
-      className="h-[20rem] sm:w-[23rem] w-[22rem]  border border-white/40  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between"
+      
+      className="h-[19rem] sm:w-[21rem] w-[20rem]  border border-white/20  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between rounded-md "
     >
-      <div className="z-20 relative  justify-between h-full">
+      
+      <div className="z-20 relative  justify-between h-full bg-black ">
         <Image
           src={img}
           alt=""
           className="border border-gray-500 h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-12 -ml-6 p-2 rounded-2xl"
         />
 
-        <motion.h3
-          initial={{ scale: 0.95 }}
-          variants={{
-            hover: {
-              scale: 1,
-            },
-          }}
-          transition={{
-            duration: 0.7,
-            ease: "backInOut",
-          }}
+        <h3
+       
+          
           className={`${BricolageGrotesque.className} origin-center text-white/90 pt-8 text-3xl font-black leading-[1.2] block font-mono`}
         >
           {title}
-        </motion.h3>
+        </h3>
         <p
           className={`${carme.className} z-20 block mt-4 text-white/60 px-8 font-normal italic`}
         >
           <span className="italic">{description}</span>
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

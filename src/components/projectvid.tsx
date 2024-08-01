@@ -70,7 +70,7 @@ export default function Present() {
             className={`z-20 text-gray-100 text-5xl xl:text-5xl  lg:text-7xl font-bold flex text-center relative ${BricolageGrotesque.className}`}
           >
             Showcase of Excellence
-            <FiMousePointer className=" mt-1 hidden  sm:inline" />
+            <FiMousePointer className=" mt-1  rotate-6 hidden  sm:inline" />
           </h2>
           <motion.a
             style={{
