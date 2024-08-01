@@ -39,7 +39,7 @@ export const Feature = ({
     <div
       key={title}
       
-      className="h-[19rem] sm:w-[21rem] w-[20rem]  border border-white/20  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between rounded-md "
+      className="h-[19rem] sm:w-[21rem] w-[20rem]  border border-white/10  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between rounded-sm "
     >
       
       <div className="z-20 relative  justify-between h-full bg-black ">
