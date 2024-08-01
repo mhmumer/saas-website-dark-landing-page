@@ -54,12 +54,13 @@ const Accordion = ({
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div
-      className="py-7 border-b border-white/30"
+      className="py-4 border  rounded-xl px-5 my-5 cursor-pointer
+       border-white/20"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center ">
         <span
-          className={`${BricolageGrotesque.className} flex-1 sm:text-xl text-lg pr-5 font-bold`}
+          className={`${BricolageGrotesque.className} flex-1 sm:text-xl text-lg pr-5 font-bold text-white/80`}
         >
           {question}
         </span>
@@ -100,14 +101,14 @@ const Accordion = ({
 
 export const FAQs = () => {
   return (
-    <main className="bg-black text-white bg-gradient-to-b from-[#5D2CA8]/90 to-black py-[72px] sm:py-24 z-20 relative ">
-      <div className="container">
+    <main className=" bg-black  text-white bg-gradient-to-b from-[#5D2CA8]/90 to-black py-[72px] sm:py-24 z-20 relative ">
+      <div className="container mt-10">
         <h2
           className={`text-center text-5xl lg:text-6xl max-w-[788px] mx-auto font-bold tracking-tight ${BricolageGrotesque.className}`}
         >
           Frequently Asked Questions
         </h2>
-        <div className="mt-12 max-w-[648px] mx-auto lg:max-w-[800px]">
+        <div className="mt-20 max-w-[648px] mx-auto lg:max-w-[900px]">
           {faqs.map(({ question, answer }) => (
             <Accordion question={question} answer={answer} key={question} />
           ))}

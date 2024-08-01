@@ -12,6 +12,7 @@ import { Example } from "@/components/Technologies";
 import Services from "@/components/Services";
 import HoverLinks from "@/components/projects";
 import Projects from "@/components/projects";
+import { Contact } from "@/components/contact";
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function Home() {
         
       </div>
       <FAQs />
+      <Contact/>
       {/* <CallToAction /> */}
       <Footer />
     </>

@@ -15,10 +15,10 @@ const carme = Carme({ subsets: ["latin"], weight: "400" });
 
 export default function Projects() {
   return (
-    <section className=" bg-[#120606] relative z-20 hidden sm:inline">
-      <div className="  overflow-hidden ">
+    <section className=" relative z-20 hidden sm:inline">
+      <div className="overflow-hidden backdrop-blur-sm">
         <main className=" lg:px-8 sm:px-4 relative z-20 py-24 items-center justify-center flex overflow-hidden ">
-          <div className="group relative backdrop-blur  sm:py-10 sm:px-10 rounded-3xl   px-16 overflow-hidden">
+          <div className="group relative   sm:py-10 sm:px-10 rounded-3xl   px-16 overflow-hidden">
             <div className="max-w-7xl flex flex-row  relative">
               <Image
                 src={SharkBlankie}
@@ -40,8 +40,8 @@ export default function Projects() {
               </div>
               <Link
                 href={"#"}
-                className="text-white bottom-0 absolute right-0 lg:group-hover:bg-white/10 border border-opacity-40
-             border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-blue-500  transition-colors duration-300"
+                className="text-white bottom-0 absolute right-0 group-hover:bg-white/10 border border-opacity-40
+             border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-blue-400  transition-colors duration-300"
               >
                 Visit Now
               </Link>
@@ -79,7 +79,7 @@ export default function Projects() {
             </div>
           </div>
         </main>
-        <main className=" px-8 relative z-20 -mb-[25rem] items-center justify-center flex overflow-hidden ">
+        <main className=" px-8 relative z-20 mb-20 items-center justify-center flex overflow-hidden ">
           <div className="group relative backdrop-blur  sm:py-10 sm:px-10  px-16 ">
             <div className="max-w-7xl sm:flex flex-row relative">
               <Image
@@ -111,7 +111,7 @@ export default function Projects() {
           </div>
         </main>
 
-        <Example />
+      
       </div>
     </section>
   );
