@@ -63,12 +63,14 @@ export const Features = () => {
             {features.map(({ title, description, img }) => (
               <div>
                 <div className="absolute h-[18rem] sm:w-[20rem] w-[19rem]  z-10 bg-white/30 blur-xl" />
-                <Feature
-                  key={title}
-                  title={title}
-                  description={description}
-                  img={img}
-                />
+                <div className=" ">
+                  <Feature
+                    key={title}
+                    title={title}
+                    description={description}
+                    img={img}
+                  />
+                </div>
               </div>
             ))}
           </div>

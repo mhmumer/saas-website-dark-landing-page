@@ -13,6 +13,7 @@ import Services from "@/components/Services";
 import HoverLinks from "@/components/projects";
 import Projects from "@/components/projects";
 import { Contact } from "@/components/contact";
+import MProjects from "@/components/projmobile";
 
 
 export const metadata: Metadata = {
@@ -30,13 +31,13 @@ export default function Home() {
       <Features />
       <Services />
       <Present />
-      <Projects/>
+      <Projects />
+      <MProjects/>
       <div className="bg-black">
         <Example />
-        
       </div>
       <FAQs />
-      <Contact/>
+      <Contact />
       {/* <CallToAction /> */}
       <Footer />
     </>

@@ -36,33 +36,31 @@ export const Feature = ({
   }, []);
 
   return (
-    <div
-      key={title}
-      
-      className="h-[19rem] sm:w-[21rem] w-[20rem]  border border-white/10  bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between rounded-sm "
-    >
-      
-      <div className="z-20 relative  justify-between h-full bg-black ">
-        <Image
-          src={img}
-          alt=""
-          className="border border-gray-500 h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-12 -ml-6 p-2 rounded-2xl"
-        />
+    <main className="">
+      <div
+        key={title}
+        className="h-[19rem] sm:w-[21rem] w-[20rem]    bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between  px-2"
+      >
+        <div className="z-20 relative  justify-between h-full bg-black border border-white/20 rounded-sm">
+          <Image
+            src={img}
+            alt=""
+            className=" h-[3rem] w-[3rem] bg-white/90 relative left-1/2 origin-center mt-12 -ml-6 p-2 rounded-2xl"
+          />
 
-        <h3
-       
-          
-          className={`${BricolageGrotesque.className} origin-center text-white/90 pt-8 text-3xl font-black leading-[1.2] block font-mono`}
-        >
-          {title}
-        </h3>
-        <p
-          className={`${carme.className} z-20 block mt-4 text-white/60 px-8 font-normal italic`}
-        >
-          <span className="italic">{description}</span>
-        </p>
+          <h3
+            className={`${BricolageGrotesque.className} origin-center text-white/90 pt-8 text-3xl font-black leading-[1.2] block font-mono`}
+          >
+            {title}
+          </h3>
+          <p
+            className={`${carme.className} z-20 block mt-4 text-white/60 px-8 font-normal italic`}
+          >
+            <span className="italic">{description}</span>
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 

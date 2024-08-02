@@ -39,7 +39,7 @@ export default function Projects() {
                 </p>
               </div>
               <Link
-                href={"#"}
+                href={"https://sharkblankie.com/"}
                 className="text-white bottom-0 absolute right-0 group-hover:bg-white/10 border border-opacity-40
              border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-blue-400  transition-colors duration-300"
               >
@@ -70,7 +70,7 @@ export default function Projects() {
                 className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl ml-6"
               />
               <Link
-                href={"#"}
+                href={"https://dastaanerumaan.com/"}
                 className="text-black bottom-0 absolute left-0 group-hover:bg-white/10 border border-opacity-40
              border-white px-12 backdrop-blur-3xl py-3 rounded-3xl bg-yellow-300 lg:group-hover:text-white  transition-colors duration-300"
               >
@@ -110,8 +110,6 @@ export default function Projects() {
             </div>
           </div>
         </main>
-
-      
       </div>
     </section>
   );

@@ -67,7 +67,7 @@ export default function Present() {
       >
         <div className="relative items-center justify-center flex flex-col">
           <h2
-            className={`z-20 text-gray-100 text-5xl xl:text-5xl  lg:text-7xl font-bold flex text-center relative ${BricolageGrotesque.className}`}
+            className={`z-20 text-gray-100 text-5xl xl:text-5xl  lg:text-7xl font-bold flex text-center relative ${BricolageGrotesque.className} px-`}
           >
             Showcase of Excellence
             <FiMousePointer className=" mt-1  rotate-6 hidden  sm:inline" />

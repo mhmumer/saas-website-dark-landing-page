@@ -120,9 +120,9 @@ const Services: React.FC = () => {
            </div>
          </motion.div>
        </div>
-       <div className="relative  mt-32">
+       <div className="relative  mt-32 ">
          <h2
-           className={`sm:text-6xl text-4xl font-semibold items-center justify-center   text-center ${poppins.className} font-mono`}
+           className={`sm:text-6xl text-4xl font-semibold items-center justify-center   text-center ${poppins.className} font-mono px-1`}
          >
            A Website Agency that does it
            <span
