@@ -217,14 +217,14 @@ function Navbar() {
                 <BadgeInfo className="sm:hidden  h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="#projects"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 <span className="hidden sm:inline">Projects</span>
                 <GrProjects className="sm:hidden  h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="#contact"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >             
                  <span className="hidden sm:inline">Contact Us</span>
