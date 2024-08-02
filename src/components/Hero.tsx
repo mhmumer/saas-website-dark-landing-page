@@ -12,7 +12,7 @@ const carme = Carme({ subsets: ["latin"], weight: "400" });
 export const Hero = () => {
   return (
     <main
-      className={` bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`}
+      className={` bg-gray-950 text-gray-50 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-32 relative overflow-clip`} id="home"
     >
       <div className="absolute h-[1200px] sm:h-[1500px] md:h-[1700px] lg:h-[1800px] w-[1000px] sm:w-[1600px] md:w-[1600px] lg:w-[2600px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE]/60  bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-150px)]"></div>
       <div className="container relative">

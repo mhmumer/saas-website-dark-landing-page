@@ -14,6 +14,8 @@ import HoverLinks from "@/components/projects";
 import Projects from "@/components/projects";
 import { Contact } from "@/components/contact";
 import MProjects from "@/components/projmobile";
+import homeNav from "@/components/home_nav";
+import BottomNavigator from "@/components/home_nav";
 
 
 export const metadata: Metadata = {
@@ -25,6 +27,7 @@ export default function Home() {
   return (
     <>
       <div className=" sticky  top-0 overflow-clip z-0">
+        {/* <BottomNavigator /> */}
         <Hero />
         <LogoTicker />
       </div>
@@ -32,7 +35,7 @@ export default function Home() {
       <Services />
       <Present />
       <Projects />
-      <MProjects/>
+      <MProjects />
       <div className="bg-black">
         <Example />
       </div>

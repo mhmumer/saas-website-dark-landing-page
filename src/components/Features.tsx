@@ -37,7 +37,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <main className=" ">
+    <main className=" " id="features">
       <div className="relative bg-black text-white py-[72px] sm:py-24">
         <div className="container mx-auto relative z-10">
           <h2

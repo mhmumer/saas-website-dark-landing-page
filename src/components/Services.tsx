@@ -98,7 +98,7 @@ const text =
 
 const Services: React.FC = () => {
    return (
-     <main className="pt-6 pb-24 bg-[#f8f7f5] sticky">
+     <main className="pt-6 pb-24 bg-[#f8f7f5] sticky" id="services">
        <div className="overflow-hidden whitespace-nowrap">
          <motion.div
            className={`flex space-x-4 sm:text-2xl lg:text-2xl xl:text-3xl text-xl sm:font-bold font-semibold  mb-4 ${poppins.className}`}

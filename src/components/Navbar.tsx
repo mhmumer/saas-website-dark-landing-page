@@ -19,6 +19,13 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import DarkModeToggle from "./DarkModeToggle";
+import { IoMdHome } from "react-icons/io";
+import { BadgeInfo } from "lucide-react";
+import { GrServices } from "react-icons/gr";
+import { GrProjects } from "react-icons/gr";
+import { FaCode } from "react-icons/fa";
+import { FaQuestion } from "react-icons/fa6";
+import { Mail } from "lucide-react";
 
 const BricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -175,6 +182,53 @@ function Navbar() {
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 Contact Us
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`sm:inline hidden fixed bottom-[10px] left-0 w-full z-50 transition-transform  duration-300 `}
+      >
+        <div className="flex justify-center">
+          <div className="border relative opacity-95 border-opacity-20 mx-auto    border-gray-100 rounded-xl bg-white backdrop-blur bg-opacity-[0.95]">
+            <nav
+              className={`${BricolageGrotesque.className} flex text-base  text-slate-900 lg:text-[1.1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-9 font-base font-mono items-center`}
+            >
+              <a
+                href="#"
+                className=" hover:text-opacity-100 transition text-opacity-[0.7]"
+              >
+                <span className="hidden sm:inline">Home</span>
+                <IoMdHome className="sm:hidden  h-6 w-6" />
+              </a>
+              <a
+                href="#features"
+                className=" hover:text-opacity-100 transition text-opacity-[0.7]"
+              >
+                <span className="hidden sm:inline">Features</span>
+                <GrServices className="sm:hidden  h-6 w-6" />
+              </a>
+              <a
+                href="#services"
+                className="hover:text-opacity-100 transition text-opacity-[0.7]"
+              >
+                <span className="hidden sm:inline">Services</span>
+                <BadgeInfo className="sm:hidden  h-6 w-6" />
+              </a>
+              <a
+                href="#"
+                className=" hover:text-opacity-100 transition text-opacity-[0.7]"
+              >
+                <span className="hidden sm:inline">Projects</span>
+                <GrProjects className="sm:hidden  h-6 w-6" />
+              </a>
+              <a
+                href="#"
+                className=" hover:text-opacity-100 transition text-opacity-[0.7]"
+              >             
+                 <span className="hidden sm:inline">Contact Us</span>
+                <Mail className="sm:hidden  h-6 w-6" />
               </a>
             </nav>
           </div>
