@@ -2,7 +2,7 @@
 
 import React from "react";
 import SharkBlankie from "../assets/images/sharkblankie.png";
-import Dastaan from "../assets/images/dastaanerumaan.png";
+import marketwizardry from "../assets/images/marketwizardry.png";
 import HimLeather from "../assets/images/himleather.png";
 import BiryaniMan from "../assets/images/biryaniman.png";
 import Image from "next/image";
@@ -65,7 +65,7 @@ export default function Projects() {
                 </p>
               </div>
               <Image
-                src={Dastaan}
+                src={marketwizardry}
                 alt=""
                 className="sm:w-[18rem] sm:h-52 lg:w-[32rem] lg:h-80 rounded-xl ml-6"
               />
