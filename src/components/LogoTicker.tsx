@@ -30,7 +30,7 @@ export const LogoTicker = () => {
           <motion.div
             className="flex gap-16 flex-none px-16"
             transition={{
-              duration: 10,
+              duration: 8,
               ease: "linear",
               repeat: Infinity,
             }}

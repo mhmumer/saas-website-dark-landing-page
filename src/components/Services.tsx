@@ -101,10 +101,10 @@ const Services: React.FC = () => {
      <main className="pt-6 pb-24 bg-[#f8f7f5] sticky" id="services">
        <div className="overflow-hidden whitespace-nowrap">
          <motion.div
-           className={`flex space-x-4 sm:text-2xl lg:text-2xl xl:text-3xl text-xl sm:font-bold font-semibold  mb-4 ${poppins.className}`}
+           className={`flex space-x-4 sm:text-xl lg:text-2xl xl:text-3xl text-lg sm:font-bold font-semibold  mb-4 ${poppins.className}`}
            initial={{ x: 0 }}
            animate={{ x: "-100%" }}
-           transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+           transition={{ ease: "linear", duration: 15, repeat: Infinity }}
          >
            <div>
              <h3 className="italic">{text}</h3>

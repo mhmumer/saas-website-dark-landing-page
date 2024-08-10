@@ -79,42 +79,18 @@ function Navbar() {
               </DrawerTrigger>
               <DrawerContent className={`${BricolageGrotesque.className}`}>
                 <div className="mx-auto w-full max-w-sm">
-                  <div className="p-4 pb-6">
+                  <div className="p-6 pb-24">
                     <div className="items-center justify-center">
                       <div className=""></div>
-                      <div className="pt-4 text-center">
+                      <div className="pt-4  text-center">
                         <Link
                           href="#"
-                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
+                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300 pt-20"
                         >
-                          About
+                          About us
                         </Link>
                       </div>
-                      <div className="pt-4 text-center">
-                        <Link
-                          href="#"
-                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
-                        >
-                          Education
-                        </Link>
-                      </div>
-                      <div className="pt-4 text-center">
-                        <Link
-                          href="#"
-                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
-                        >
-                          Projects
-                        </Link>
-                      </div>
-                      <div className="pt-4 text-center">
-                        <Link
-                          href="#"
-                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
-                        >
-                          Skills
-                        </Link>
-                      </div>
-                      <div className="pt-4 pb-6 text-center">
+                      <div className="pt-7 text-center">
                         <Link
                           href="#"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
@@ -122,19 +98,31 @@ function Navbar() {
                           Services
                         </Link>
                       </div>
-                      <div className="pt-4 items-center">
+                      <div className="pt-7 text-center">
                         <Link
-                          href="mailto:rawalaumer@gmail.com"
-                          className="text-2xl relative left-[3rem] mx-auto font-bold tracking-wider underline-offset-4 decoration-1 text-gray-300"
+                          href="#"
+                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
                         >
-                          <div className="pb-10 pt-6">
-                            <button className="bg-gray-100 py-2 flex items-center text-gray-800 gap-3 focus:scale-103 hover:scale-103 hover:bg-[#f3f3f3] hover:duration-300 active:scale-103 transition rounded-xl px-12">
-                              Contact
-                              <FaArrowRight className="translate-x-1 p-[0.15rem] pt-[0.2rem] text-gray-800 transition opacity-100" />
-                            </button>
-                          </div>
+                          Our Work
                         </Link>
                       </div>
+                      <div className="pt-7 text-center">
+                        <Link
+                          href="#"
+                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
+                        >
+                          Contact Us
+                        </Link>
+                      </div>
+                      <div className="pt-7 pb-6 text-center">
+                        <Link
+                          href="#"
+                          className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
+                        >
+                          Blogs
+                        </Link>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -175,19 +163,16 @@ function Navbar() {
                 href="#"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
-                Pricing
+                Contact Us
               </a>
               <a
                 href="#"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
-              >
-                Contact Us
-              </a>
+              >Blogs</a>
             </nav>
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
