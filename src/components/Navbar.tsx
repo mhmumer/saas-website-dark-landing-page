@@ -84,7 +84,7 @@ function Navbar() {
                       <div className=""></div>
                       <div className="pt-4  text-center">
                         <Link
-                          href="#"
+                          href="/about"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300 pt-20"
                         >
                           About us
@@ -92,7 +92,7 @@ function Navbar() {
                       </div>
                       <div className="pt-7 text-center">
                         <Link
-                          href="#"
+                          href="/Services"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
                         >
                           Services
@@ -100,7 +100,7 @@ function Navbar() {
                       </div>
                       <div className="pt-7 text-center">
                         <Link
-                          href="#"
+                          href="/Projects"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
                         >
                           Our Work
@@ -108,7 +108,7 @@ function Navbar() {
                       </div>
                       <div className="pt-7 text-center">
                         <Link
-                          href="#"
+                          href="/Contact"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
                         >
                           Contact Us
@@ -116,13 +116,12 @@ function Navbar() {
                       </div>
                       <div className="pt-7 pb-6 text-center">
                         <Link
-                          href="#"
+                          href="/Blogs"
                           className="text-4xl font-bold tracking-widest underline-offset-4 decoration-1 text-gray-300"
                         >
                           Blogs
                         </Link>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -142,33 +141,35 @@ function Navbar() {
               className={`${BricolageGrotesque.className} flex text-base  text-slate-100 lg:text-[1.1rem] p-4 lg:px-8 px-5 tracking-widest text-center lg:gap-8 gap-5 font-base font-mono items-center`}
             >
               <a
-                href="#"
+                href="/About"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 About us
               </a>
               <a
-                href="#"
+                href="/Services"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 Services
               </a>
               <a
-                href="#"
+                href="/Projects"
                 className="hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 Our Work
               </a>
               <a
-                href="#"
+                href="/Contact"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
               >
                 Contact Us
               </a>
               <a
-                href="#"
+                href="/Blogs"
                 className=" hover:text-opacity-100 transition text-opacity-[0.7]"
-              >Blogs</a>
+              >
+                Blogs
+              </a>
             </nav>
           </div>
         </div>

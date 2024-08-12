@@ -54,8 +54,8 @@ const DrawerContent = React.forwardRef<
     >
       <div className="mx-auto mt-4 h-2 w-[100px] rounded-full bg-muted" />
 
-      <Link href="#" className="mx-auto pt-6">
-        <div className=" pb-8   relative">
+      <Link href="#" className="mx-auto pt-8">
+        <div className=" pb-2   relative">
          
           <Image
             src={logo}
