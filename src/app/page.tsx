@@ -16,6 +16,7 @@ import { Contact } from "@/components/contact";
 import MProjects from "@/components/projmobile";
 import homeNav from "@/components/home_nav";
 import BottomNavigator from "@/components/home_nav";
+import { DragCards } from "@/components/DragCards";
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function Home() {
       <div className="bg-black">
         <Example />
       </div>
+      <DragCards/>
       <FAQs />
       <Contact />
       {/* <CallToAction /> */}
