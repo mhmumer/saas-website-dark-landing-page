@@ -31,7 +31,7 @@ export const Contact = () => {
          <form action={action} className="mt-16 flex  flex-col">
            <input
              placeholder="eg. example@gmail.com"
-             className={`h-[4.5rem] px-5 mb-2 rounded-2xl border border-black/10 text-lg font-normal ${rubik.className}`}
+             className={`h-[4.5rem]  px-5 mb-2 rounded-2xl border border-black/10 outline-black/20 text-lg font-normal ${rubik.className}`}
              type="email"
              name="senderEmail"
              required
@@ -39,7 +39,7 @@ export const Contact = () => {
            />
            <textarea
              placeholder="Enter Your Message"
-             className={`h-60 mb-4 my-1 rounded-2xl border border-black/10 p-5 text-lg font-normal ${rubik.className}`}
+             className={`h-60 mb-4 my-1 rounded-2xl border border-black/10 p-5 outline-black/20  text-lg font-normal ${rubik.className}`}
              name="message"
              id=""
              cols={30}
