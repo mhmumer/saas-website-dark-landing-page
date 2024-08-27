@@ -7,6 +7,7 @@ import { IoWoman } from "react-icons/io5";
 import Image from "next/image";
 import Woman from "@/assets/icons/woman.png"
 import Man from "@/assets/icons/men.png"
+import SwipeCards from "./SwipeReviews";
 
 
 const reviews = [
@@ -64,13 +65,18 @@ const reviews = [
 
 export const DragCards = () => {
   return (
-    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
-      <h2 className="relative z-0 text-[18vw] font-black text-neutral-800 md:text-[150px] text-center">
-        Clients Never Lie<span className="text-indigo-500">.</span>
-      </h2>
-      <Cards />
-      <h3 className="bottom-0 justify-end p-2 underline underline-white text-lg relative z-20 text-[#95a6a6] items-end ">Drag Cards</h3>
-    </section>
+    <div>
+      <section className="relative sm:grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950 hidden sm:block">
+        <h2 className="relative z-0 text-[18vw] font-black text-neutral-800 md:text-[150px] text-center">
+          Clients Never Lie<span className="text-indigo-500">.</span>
+        </h2>
+        <Cards />
+        <h3 className="bottom-0 justify-end p-2 underline underline-white text-lg relative z-20 text-[#95a6a6] items-end ">
+          Drag Cards
+        </h3>
+      </section>
+      <SwipeCards/>
+    </div>
   );
 };
 

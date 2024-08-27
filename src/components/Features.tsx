@@ -61,8 +61,7 @@ export const Features = () => {
           </div>
           <div className="mt-16 flex flex-wrap-reverse gap-5  sm:flex-1 relative items-center justify-center">
             {features.map(({ title, description, img }) => (
-              <div>
-                <div className="absolute h-[18rem] sm:w-[20rem] w-[19rem]  z-10 bg-white/30 blur-xl" />
+              <div className="transition-all scale-100 hover:scale-105">
                 <div className=" ">
                   <Feature
                     key={title}

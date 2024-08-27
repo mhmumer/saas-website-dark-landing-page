@@ -49,7 +49,7 @@ const Projects = [
 export default function MProjects() {
   return (
     <section className="relative z-20 bg-black/70 rounded-t-md pt-10  items-center justify-center sm:hidden pb-20">
-      {Projects.map(({ img, title, desc }) => (
+      {Projects.map(({ img, title, desc, link }) => (
         <div className="p-2 pb-12">
           <Image src={img} alt="" className="rounded-sm" />
           <div className="pt-5 px-1">
@@ -64,7 +64,7 @@ export default function MProjects() {
               {desc}
             </p>
             <Link
-              href={"#"}
+              href={link}
               className="bg-white/10 text-white backdrop-blur-xl border border-white/20  mt-4  rounded-full  py-2 relative flex items-center text-center justify-center"
             >
               Visit Now

@@ -39,9 +39,9 @@ export const Feature = ({
     <main className="">
       <div
         key={title}
-        className="h-[19rem] sm:w-[21rem] w-[20rem]    bg-black overflow-hidden shrink-0  text-center relative flex flex-col justify-between  px-2"
+        className="h-[19rem] sm:w-[21rem] w-[20rem] shadow-md shadow-white  bg-black  overflow-hidden shrink-0  text-center relative flex flex-col justify-between  border border-white/20"
       >
-        <div className="z-20 relative  justify-between h-full bg-black border border-white/20 rounded-sm">
+        <div className="z-20 relative    justify-between h-full  rounded-sm">
           <Image
             src={img}
             alt=""
