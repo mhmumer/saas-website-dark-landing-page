@@ -52,7 +52,7 @@ const Card = ({
   });
 
   const handleDragEnd = () => {
-    if (Math.abs(x.get()) > 100) {
+    if (Math.abs(x.get()) > 50) {
       setCards((pv:any) => pv.filter((v:any) => v.id !== id));
     }
   };
